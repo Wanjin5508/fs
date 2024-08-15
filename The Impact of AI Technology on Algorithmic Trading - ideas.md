@@ -1,5 +1,8 @@
 The Impact of AI Technology on Algorithmic Trading
+--> 这里的人工智能并不是指最近兴起的生成式, 而是机器学习
 Raoul Hentschel
+
+# kickoff
 
 11月9日 做pre
 在此之前一周提交FS
@@ -40,3 +43,47 @@ FS 30页
 
 
 - [ ] ppt最后推荐的文章可以看看, 学一下怎么写review
+
+
+## Type: Scoping Review
+
+# Research Questions
+### 1. AI 为什么能够检测金融资产的价格趋势变化
+- 这里突出人工智能相比于人类投资者的优势 , 以及人类如何借助人工智能弥补自身的不足
+	- technical and fundamental analysis
+- 更进一步, 突出了本文的重要性
+
+#### Method 1: time series forecast
+使用 Transformer 的变体进行时间序列预测
+https://huggingface.co/blog/autoformer
+
+
+#### Method 2: NLP
+论文中提到了使用AI检测社交媒体上的投资者的情绪, 以下是可能的检索范围:
+1. NLP
+2. LLM
+3. Web Crawler
+4. API
+
+或者通过经济新闻分析基本面
+
+从而计算出市场晴雨表
+
+
+### 2. 算法交易中, AI系统设计时使用的Indicators
+
+AI的具体实现技术需要写嘛? 例如使用了哪种机器学习的算法
+
+
+### 3. AI 对现在的 Institutional Traders 有哪些影响
+
+
+
+
+
+
+
+
+
+
+
