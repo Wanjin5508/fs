@@ -47,8 +47,12 @@ FS 30页
 
 ## Type: Scoping Review
 
+# 引言
+这一轮AI发展的技术背景, 尤其是相对于传统的深度学习模型
+
 # Research Questions
-### 1. AI 为什么能够检测金融资产的价格趋势变化
+### 1. AI 为什么能够检测金融资产的价格趋势变化 wie
+- 新的特征, 相比于传统的 AT
 - 这里突出人工智能相比于人类投资者的优势 , 以及人类如何借助人工智能弥补自身的不足
 	- technical and fundamental analysis
 - 更进一步, 突出了本文的重要性
@@ -67,22 +71,28 @@ https://huggingface.co/blog/autoformer
 
 或者通过经济新闻分析基本面
 
-从而计算出市场晴雨表
+从而计算出市场晴雨表 barometer
 
 
-### 2. 算法交易中, AI系统设计时使用的Indicators
+### 2. 算法交易中, AI系统设计时使用的新的Indicators
 
 AI的具体实现技术需要写嘛? 例如使用了哪种机器学习的算法
 
 
 ### 3. AI 对现在的 Institutional Traders 有哪些影响
+实际投资收益方面的分析
+
+个人投资者?
+
+
+### 4. 引入AI以后, AT系统架构的变化
+即研究AI应用的系统架构
 
 
 
-
-
-
-
+# todos
+- [ ] grobstruktur
+- [ ] RQ
 
 
 
