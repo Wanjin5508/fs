@@ -51,7 +51,9 @@ FS 30页
 这一轮AI发展的技术背景, 尤其是相对于传统的深度学习模型
 
 # Research Questions
-### 1. AI 为什么能够检测金融资产的价格趋势变化 wie
+
+### 0. 常规的AT的工作流程是
+### 1. AI ~~为什么~~ *怎样*检测金融资产的价格趋势变化 
 - 新的特征, 相比于传统的 AT
 - 这里突出人工智能相比于人类投资者的优势 , 以及人类如何借助人工智能弥补自身的不足
 	- technical and fundamental analysis
@@ -78,6 +80,7 @@ https://huggingface.co/blog/autoformer
 
 AI的具体实现技术需要写嘛? 例如使用了哪种机器学习的算法
 
+--> 这个不好! 
 
 ### 3. AI 对现在的 Institutional Traders 有哪些影响
 实际投资收益方面的分析
@@ -92,7 +95,28 @@ AI的具体实现技术需要写嘛? 例如使用了哪种机器学习的算法
 
 # todos
 - [ ] grobstruktur
-- [ ] RQ
+- [x] RQ
+
+**RQ 1**: 在 Algorithmic Trading 的最佳实践中, 常见的工作流程是什么样的?
+**RQ 2**: 相比于传统的基于机器学习的Algorithmic Trading, 引入AI带来的优势有哪些?
+**RQ 3**: AI在投资中的应用, 对于机构投资者有哪些影响?
+**RQ 4**: Algorithmic Trading 系统在引入AI 以后, 从系统架构角度的变化有哪些?
+
+**Forschungsfrage 1 (RQ 1)**: Wie sehen die gängigen Arbeitsabläufe in den besten Praktiken des algorithmischen Handels aus?
+
+**Forschungsfrage 2 (RQ 2)**: Welche Vorteile bietet die Einführung von KI im Vergleich zu traditionellen, auf maschinellem Lernen basierenden algorithmischen Handelssystemen?
+
+**Forschungsfrage 3 (RQ 3)**: Welche Auswirkungen hat die Anwendung von KI auf Investitionen für institutionelle Investoren?
+
+**Forschungsfrage 4 (RQ 4)**: Welche Veränderungen ergeben sich aus systemarchitektonischer Sicht nach der Einführung von KI in Systemen für algorithmischen Handel?
+
+![[Pasted image 20240813125052.png]]
+
+
+
+
+
+
 
 
 
