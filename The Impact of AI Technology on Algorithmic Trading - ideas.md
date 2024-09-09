@@ -94,7 +94,7 @@ AI的具体实现技术需要写嘛? 例如使用了哪种机器学习的算法
 
 
 # todos
-- [ ] grobstruktur
+- [x] grobstruktur
 - [x] RQ
 
 **RQ 1**: 在 Algorithmic Trading 的最佳实践中, 常见的工作流程是什么样的?
