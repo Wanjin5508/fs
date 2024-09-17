@@ -5,7 +5,12 @@
 
 导师说, 结构没什么大问题, 不太需要修改
 
-
+既然是突出AI技术对AT的影响, 那么我希望按照不同的AI技术划分第四章 Ergebnisse 的小标题, 目前计划:
+- 统计方法
+- 机器学习
+- 深度学习
+- 强化学习
+- (深度强化学习)
 
 # 1 Einleitung
 ## Motivation
@@ -39,6 +44,7 @@ Wie sehen die gängigen Arbeitsabläufe in den besten Praktiken des algorithmisc
 (括号内的内容是optional, 用于限定我的研究内容在预测 Vorhersage), 但是我不希望添加这个限定, 因为我希望通*过多个方面的研究*来回答这个R Q
 
 - [ ] --> 我需要研究当前科研和实践中的现状, 考虑不同的投资标的物/市场上, 算法交易采用的方法和实践
+	- [ ] 这里要提一下传统的算法交易, 即基于预设规则。还有本文的重点: 基于广义AI的方法和实际, 例如机器学习, 深度学习和强化学习
 
 ###  **Forschungsfrage 2 (RQ 2)**: AI 机遇和挑战
 Welche Vorteile bietet die Einführung von KI im Vergleich zu traditionellen, auf maschinellem Lernen basierenden algorithmischen Handelssystemen?

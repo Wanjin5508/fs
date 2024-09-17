@@ -1,10 +1,10 @@
 The Impact of AI Technology on Algorithmic Trading
---> 这里的人工智能并不是指最近兴起的生成式, 而是机器学习
+--> 这里的人工智能并不是指最近兴起的生成式, 而是机器学习, 需要在前两章解释
 Raoul Hentschel
 
 # kickoff
 
-11月9日 做pre
+11月19日 做pre
 在此之前一周提交FS
 
 和beteuer私下约定也行
