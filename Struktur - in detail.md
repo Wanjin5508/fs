@@ -60,7 +60,7 @@
 Der erwartete Beitrag dieser Studie besteht darin, durch eine systematische Literaturübersicht die oben genannten (zwei oder drei) potenziellen Forschungsfragen zu beantworten. Dies soll anderen Forschern und Entwicklern eine *fundierte theoretische Grundlage* bieten.
 --> 导师说, 理论基础在FS中仅仅扮演一个次要的角色, 因为 FS 的目的是从 RQ 中获取 ***Erkenntnisgewinnung***. 即einen aktuellen Stand der Forschung zu dem Thema erarbeiten
 
-RQ 1: "*Welche Methoden und Praktiken des algorithmischen Handelns existieren in der Literatur “?*
+RQ 1: "*Welche Methoden und Praktiken des algorithmischen Handelns existieren in der Literatur ?*
 
 - [ ] --> 我需要研究当前科研和实践中的现状, 考虑不同的投资标的物/市场上, 算法交易采用的方法和实践
 	- [ ] 这里要提一下传统的算法交易, 即基于预设规则。还有本文的重点: 基于广义AI的方法和实际, 例如机器学习, 深度学习和强化学习, 并在第四章对这些不同的技术路线分别进行分析
@@ -72,12 +72,13 @@ RQ2: *"Welche Herausforderungen und Chancen bietet die Integration von AI in bes
 
 # 2 Theoretischer Hintergrund
 
-不同于 1.2 中的概念, 我想在这里阐述位于第四章的文献中涉及的多种解决方案的理论基础。这些解决方案大致包括4个方面:
+不同于 1.2 中的概念, 我想在这里阐述位于第四章的文献中涉及的多种解决方案的理论基础。这些解决方案大致包括5个方面:
 1. 高频交易
 2. 机器学习
 3. 深度学习
 4. 强化学习
 5. (深度强化学习)
+6. 启发式算法
 
 注意, 本章只涉及不同模型和算法的基本原理, 目的是让读者更好地理解本研究的第四章中的研究成果。
 
@@ -94,7 +95,7 @@ Ziel: eine fundierte theoretische Grundlage über KI & AT
 
 ## 2.2 Machine Learning
 
-分成小章节, 分别介绍文献中常用的方法中涉及的机器学习算法的原理:
+分成小章节, 分类标准是 2.2.1 监督学习 和 2.2.2 无监督学习, 分别介绍文献中常用的方法中涉及的机器学习算法的原理:
 - 随机森林
 - XGBoost
 - SVM
@@ -118,6 +119,10 @@ Ziel: eine fundierte theoretische Grundlage über KI & AT
 强化学习算法的基本组成部分, 以及最常见的变体
 
 
+## 2.5 启发式算法
+适用范围最广: 遗传算法
+
+用于解决优化问题。
 
 
 # 3 Methodik
@@ -150,11 +155,23 @@ Exklusionskriterien: alt, Programmierung, Mathematik
 
 特点和优势
 
+每个子章节用于概括文献中使用机器学习技术的文献所涉及的投资市场
+
+值得注意的是, 机器学习通常被用于预测某种资产未来的价格走势, 但是无法直接输出潜在的投资决策。
+
+### 4.1.1 股票市场
+
+
+### 4.1.2 加密货币
+
+
+
+
 ## 4.2 深度学习
 
 采用深度学习的学者更多, 尤其是LSTM的多种变体
 
-还有一种和生成式AI强相关的方法: Transformer, 但是相关的文献只有一篇
+还有一种和生成式AI强相关的方法: Transformer, 但是直接相关的文献只有一篇
 
 特点和优势
 
@@ -162,18 +179,38 @@ Exklusionskriterien: alt, Programmierung, Mathematik
 本研究的重点, 也是当前算法交易领域最热门的主题
 我检索到的文献中, 采用强化学习和深度强化学习的文章数量最多
 
-目前的研究成果中, 看上去效果最好的一种方法。但是同时也是最复杂的
+目前的研究成果中, 应用最广且看上去效果最好的一种方法。但是同时也是最复杂的
+
+强化学习也被更加广泛地应用于多种金融市场上的算法交易:
+
+### 4.3.1 股票
+### 4.3.2 期货
+### 4.3.3 加密货币
+### 4.3.4 外汇
 
 
 ## 4.4 优化算法
 例如遗传算法等启发式算法在前面三种方法的基础上进行优化, 
 
-或者采用人工校正, 从而避免AI造成的限制, 进一步提升投资决策的收益率
+或者采用人工校正, 从而避免AI造成的过拟合问题, 进一步提升投资决策的收益率
+
+### 4.4.1 启发式算法
+启发式算法 例如遗传算法, 可以将人类专家的投资决策整合到AI的行为中。
+
+### 4.4.2 人工校正
+
+
 
 # 5 Diskussion
-把第四章进行总结, 并考虑优化潜力
 
+## 5.1 文献中的方法和实践
+把第四章进行总结, 从而回答第一个研究问题: 
+- *Welche Methoden und Praktiken des algorithmischen Handelns existieren in der Literatur ?*
+并说明这些方法和实践的重要程度。
 
+## 5.2 AI给算法交易带来的机遇和挑战
+为了回答第二个研究问题, 我需要在第五章更进一步论述AI技术给算法交易系统带来的机遇和挑战, 可以使用第四章提到的方法和实践, 但是最好不要重复引用同一篇文献的同一个句子。
+- *"Welche Herausforderungen und Chancen bietet die Integration von AI in bestehende algorithmische Handelssysteme?*
 
-
-
+## 5.3 反省和展望
+接下来的研究应该区分广义上的AI和当下以大语言模型为基础的生成式AI在算法交易领域的应用。
