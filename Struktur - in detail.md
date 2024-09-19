@@ -2,17 +2,37 @@
 
 
 # 0 Verzeichnis
-[[#1 Einleitung]]
-- [[#]]
+- [[#1 Einleitung]]
+  - [[#1.1 Motivation]]
+  - [[#1.2 Zentrale Begriffe]]
+    - [[#1.2.1 Finanzmarkt]]
+    - [[#1.2.2 AI Technology]]
+  - [[#1.3 Forschungsbeitrag]]
+- [[#2 Theoretischer Hintergrund]]
+ - [[#2.1 Hochfrequenzhandel (HFT)]]
+ - [[#2.2 Maschinelles Lernen]]
+ - [[#2.3 Deep Learning]]
+ - [[#2.4 Reinforcement Learning]]
+ - [[#2.5 Heuristische Algorithmen]]
+- [[#3 Methodik]]
+- [[#4 Ergebnisse]]
+  - [[#4.1 Maschinenlernen]]
+    - [[#4.1.1 Aktienmarkt]]
+    - [[#4.1.2 Kryptowährungen]]
+  - [[#4.2 Deep Learning]]
+  - [[#4.3 Reinforcement Learning]]
+    - [[#4.3.1 Aktien]]
+    - [[#4.3.2 Futures]]
+    - [[#4.3.3 Kryptowährungen]]
+    - [[#4.3.4 Forex]]
+  - [[#4.4 Optimierungsalgorithmen]]
+    - [[#4.4.1 Heuristische Algorithmen]]
+    - [[#4.4.2 Manuelle Anpassungen]]
+- [[#5 Diskussion]]
+  - [[#5.1 Methoden und Praktiken in der Literatur]]
+  - [[#5.2 Chancen und Herausforderungen durch AI]]
+  - [[#5.3 Reflexion und Ausblick]]
 
-
-[[#2 Theoretischer Hintergrund]]
-
-
-
-[[#3 Methodik]]
-
-[[#4 Ergebnisse]]
 既然是突出AI技术对AT的影响, 那么我希望按照不同的AI技术划分第四章 Ergebnisse 的小标题, 目前计划:
 - 统计方法
 - 机器学习
@@ -20,22 +40,29 @@
 - 强化学习
 - (深度强化学习)
 
-[[#5 Diskussion]]
+
 
 
 # 1 Einleitung
 ## 1.1 Motivation
 
-- Die Entwicklung der KI führt zu Veränderungen in verschiedenen Branchen.
-- Diese Arbeit untersucht die vielfältigen Auswirkungen der KI-Technologie auf den algorithmischen Handel.
 
 
-研究空隙: 生成式AI兴起以来, 各行各业的常规工作流都受到了或多或少的影响。目前针对广义上的AI在算法交易中的影响的研究数量较少, 尤其是在当前生成式AI流行的趋势下。 根据文献检索的结果, 绝大多数的研究倾向于从数学和算法的角度对算法交易进行分析和优化, 并进一步开发新的算法交易模型 。大量学者的论文中只涉及他们提出的模型相关的理论知识, 例如采用传统机器学习方法进行算法交易模型设计的学者只会列出多种机器学习算法的优劣.
-而算法交易作为一个跨学科且对数学和计算机算法有着较高要求的学科, 给来自不同行业背景的研究者和初学者带来了较高的进入门槛。因此, 本研究希望在AI产品被大规模应用的背景下, 为其他研究者建立一个稳固的知识基础。借助本研究的贡献, 其他的研究者可以对多年以来在AI技术影响下的算法交易方法和金融市场迅速建立初步认识, 从而提升他们进一步研究的效率。
+自从以chatgpt为代表的生成式AI兴起以来, 不同专业领域的研究人员对于AI在各自领域的应用以及影响产生了浓厚的兴趣。算法交易从早期仅仅依赖于统计学模型和计量经济学模型(g-1, 1-2)以及高频交易(s-1-10)获取单一资产投资收益最大化, 发展到现在基于深度强化学习技术的投资决策辅助工具(s-1-4), AI技术的发展不能被忽视。 
+尽管已经有大量学者通过实际案例, 对于AI技术在算法交易中的应用展开了深入的研究, 但是他们的研究大多数倾向于从数学和算法的角度分析某项AI技术能否在真实的投资案例中取得相对更好的投资收益。例如...
+也有的研究人员倾向于通过对照实验, 分析不同的AI技术在提高投资收益以及降低交易风险方面的性能差异, 例如 (1-1) 对比了 recurrent reinforcement learning 和 BiLSTM组成的混合方法和单一方法在美国股票市场上的表现.
+还有些研究人员针对某个特定的金融市场, 提出一个基于AI的专门的算法交易模型, 例如
+
+尽管通过不断迭代的AI技术获取高额的投资收益在算法交易领域的研究中扮演了重要角色, 但是技术变革带来的影响同样具有研究意义。随着近几十年来AI技术的不断发展, 算法交易几乎涉及所有的金融市场, 例如股票市场, 期货市场, 虚拟货币交易所等等。但是目前学术界尚未从技术的角度对算法交易中AI引发的影响进行总结性分析, 这是因为算法交易作为一个复杂的交叉学科, 同时涵盖了经济学, 金融学和计算机科学等多个学科门类。同时, 算法交易的复杂性也增加了不同学术背景的研究者进入这一领域的门槛。因此本研究希望能够通过系统性文献分析的方法, 深入探讨当前学术界针对算法交易的方法和实践的最新研究成果。并在此基础上, 进一步研究AI技术的发展对算法交易行业带来的机遇和挑战。
+
+
+
+
 
 
 ## 1.2 Zentrale Begriffe
-在这一节, 本研究相关的常用概念被详细阐释和区分, 从而让来自不同研究领域的读者们准确理解不同专业术语的含义。我将会将这些概念按照学科领域不同分成两类, 即金融市场相关的概念和AI技术相关的概念。
+在这一节, 本研究相关的常用概念被详细阐释和区分, 从而让来自不同研究领域的读者们准确理解不同专业术语的含义。同时, 这些概念在本研究中所代表的具体含义也会被限定, 从而避免读者产生误解。这些概念按照其所属的学科领域分成两类, 即金融市场相关的概念和AI技术相关的概念。
+
 (这部分可以随着研究的深入不断更新)
 
 ### 1.2.1 Finanzmarkt
@@ -57,8 +84,15 @@
 
 
 ## 1.3 Forschungsbeitrag
-Der erwartete Beitrag dieser Studie besteht darin, durch eine systematische Literaturübersicht die oben genannten (zwei oder drei) potenziellen Forschungsfragen zu beantworten. Dies soll anderen Forschern und Entwicklern eine *fundierte theoretische Grundlage* bieten.
+> Der erwartete Beitrag dieser Studie besteht darin, durch eine systematische Literaturübersicht die oben genannten (zwei oder drei) potenziellen Forschungsfragen zu beantworten. Dies soll anderen Forschern und Entwicklern eine *fundierte theoretische Grundlage* bieten.
 --> 导师说, 理论基础在FS中仅仅扮演一个次要的角色, 因为 FS 的目的是从 RQ 中获取 ***Erkenntnisgewinnung***. 即einen aktuellen Stand der Forschung zu dem Thema erarbeiten
+
+在这个系统性文献研究中, 我期望实现的贡献是通过对学术界关于算法交易的最新研究成果以及最佳实践的分析, 为其他研究者提供关于该领域中常用的解决方案和实现这些方案所需要的知识基础。本研究还希望通过对其他研究者提出的理论和进行的实践的总结, 讨论AI的引入所带来的机遇和挑战, 这对于市场上的参与者们有不同的意义
+算法交易作为一个跨学科且对数学和计算机算法有着较高要求的学科, 给来自不同行业背景的研究者和初学者带来了较高的进入门槛。例如, 金融学领域的研究人员在缺乏对AI技术对了解的情况下, 很难无障碍地阅读算法交易和相应的人工智能技术的的论文。而一部分开发者和信息技术从业人员在不了解金融市场规则和投资策略的情况下, 开发出高性能的算法交易工具也是很困难的。同时, 来自不同领域的研究人员在进行学术讨论时, 也会经常面临双向沟通效率低的难题。
+因此, 本研究希望在AI产品被大规模应用的背景下, 为来自不同领域的研究者建立一个稳固的知识基础, 同时在不同领域之间建立起沟通的桥梁。借助本研究的成果, 金融分析领域的研究者可以对算法交易中常用的AI技术建立基本认识, 同时AI领域的专家也能借助本研究将他们的专业知识扩展到一个前景广阔的应用领域。
+
+
+在上述研究动机和研究空隙的基础上,  本研究希望通过系统性文献分析, 回答以下两个研究问题。
 
 RQ 1: "*Welche Methoden und Praktiken des algorithmischen Handelns existieren in der Literatur ?*
 
@@ -66,9 +100,8 @@ RQ 1: "*Welche Methoden und Praktiken des algorithmischen Handelns existieren in
 	- [ ] 这里要提一下传统的算法交易, 即基于预设规则。还有本文的重点: 基于广义AI的方法和实际, 例如机器学习, 深度学习和强化学习, 并在第四章对这些不同的技术路线分别进行分析
 
 RQ2: *"Welche Herausforderungen und Chancen bietet die Integration von AI in bestehende algorithmische Handelssysteme?*
-原本关于机构投资者的 RQ 3 由于直接相关的文献数量过少, 因此我认为不适合作为一个单独的研究问题。将原本的RQ 3 放到动机部分或者末尾的展望部分更加合适。 
+> :本关于机构投资者的 RQ 3 由于直接相关的文献数量过少, 因此我认为不适合作为一个单独的研究问题。将原本的RQ 3 放到动机部分或者末尾的展望部分更加合适。 
 
-在这个系统性文献研究中, 我期望实现的贡献是通过对学术界关于算法交易的最新研究成果以及最佳时间的分析, 为其他研究者提供关于该领域中常用的解决方案和实现这些方案所需要的知识基础。本研究还希望通过对其他研究者提出的理论和进行的实践的总结, 讨论AI的引入所带来的机遇和挑战, 这对于市场上的参与者们有不同的意义
 
 # 2 Theoretischer Hintergrund
 
