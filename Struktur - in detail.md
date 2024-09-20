@@ -46,14 +46,16 @@
 # 1 Einleitung
 ## 1.1 Motivation
 
+近几十年来, 算法交易正逐渐成为金融交易的趋势(1-1). 这是因为大量的时间和资源被投入到算法交易的设计和实现中, 从而帮助投资者在金融市场获取有竞争力的信息优势(s-1-2)。但是金融市场本身具有的复杂, 不确定, 以及动态的特性(s-1-4), 使得金融交易面临挑战, 例如经济指标、投资者情绪以及其他市场参与者的行为等因素都会影响金融交易(s-1-15)。为了获取更高的交易利润, 新的技术和算法被不断地应用到算法交易策略中。相比于传统的交易方法, 算法交易在速度、精度、理性程度、处理能力以及警惕性方面占据优势(s-1-4)。
 
 
-自从以chatgpt为代表的生成式AI兴起以来, 不同专业领域的研究人员对于AI在各自领域的应用以及影响产生了浓厚的兴趣。算法交易从早期仅仅依赖于统计学模型和计量经济学模型(g-1, 1-2)以及高频交易(s-1-10)获取单一资产投资收益最大化, 发展到现在基于深度强化学习技术的投资决策辅助工具(s-1-4), AI技术的发展不能被忽视。 
-尽管已经有大量学者通过实际案例, 对于AI技术在算法交易中的应用展开了深入的研究, 但是他们的研究大多数倾向于从数学和算法的角度分析某项AI技术能否在真实的投资案例中取得相对更好的投资收益。例如...
-也有的研究人员倾向于通过对照实验, 分析不同的AI技术在提高投资收益以及降低交易风险方面的性能差异, 例如 (1-1) 对比了 recurrent reinforcement learning 和 BiLSTM组成的混合方法和单一方法在美国股票市场上的表现.
-还有些研究人员针对某个特定的金融市场, 提出一个基于AI的专门的算法交易模型, 例如
+自从以chatgpt为代表的生成式AI兴起以来, 不同专业领域的研究人员对于AI在各自领域的应用以及影响产生了浓厚的兴趣。AI也正在改变人们日常生活的方方面面, 并把人类从一些复杂的工作中解放出来。金融领域由于其复杂的特性, 从多年以前就是AI研究的热门领域。许多金融机构, 例如银行、基金管理公司和资产管理者都给机器学习、深度学习、强化学习等AI技术赋予了较高的优先级, 并借此优化其投资策略(2)。
+算法交易从早期仅仅依赖于统计学模型和计量经济学模型(g-1, 1-2)以及高频交易(s-1-10)获取单一资产投资收益最大化, 发展到现在基于深度强化学习技术的投资决策辅助工具(s-1-4), AI技术的发展不能被忽视。 在现代化的算法交易中, 包括机器学习, 深度学习等AI技术已经被广泛地应用于数据处理和预测, 从而获取交易信号(1-1)。这是因为机器学习等技术又能力弥补传统方法在发现隐藏关系和pattern中的不足(1-3)。
+尽管已经有大量学者通过实际案例, 对于AI技术在算法交易中的应用展开了深入的研究, 
+有的研究人员倾向于通过对照实验, 分析不同的AI技术在提高投资收益以及降低交易风险方面的性能差异, 例如 (1-1) 对比了 recurrent reinforcement learning 和 BiLSTM组成的混合方法和单一方法在美国股票市场上的表现. 还有些研究人员针对某个特定的金融市场, 提出一个基于AI的专门的算法交易模型, 例如, (1-5)等人提出了一种遗传算法和AI结合的加密货币交易策略。
 
-尽管通过不断迭代的AI技术获取高额的投资收益在算法交易领域的研究中扮演了重要角色, 但是技术变革带来的影响同样具有研究意义。随着近几十年来AI技术的不断发展, 算法交易几乎涉及所有的金融市场, 例如股票市场, 期货市场, 虚拟货币交易所等等。但是目前学术界尚未从技术的角度对算法交易中AI引发的影响进行总结性分析, 这是因为算法交易作为一个复杂的交叉学科, 同时涵盖了经济学, 金融学和计算机科学等多个学科门类。同时, 算法交易的复杂性也增加了不同学术背景的研究者进入这一领域的门槛。因此本研究希望能够通过系统性文献分析的方法, 深入探讨当前学术界针对算法交易的方法和实践的最新研究成果。并在此基础上, 进一步研究AI技术的发展对算法交易行业带来的机遇和挑战。
+
+尽管通过不断迭代的AI技术获取高额的投资收益在算法交易领域的研究中扮演了重要角色, 但是技术变革带来的影响同样具有研究意义. 得益于大规模可获取的高质量金融数据和AI领域的突破性进展, 新的更复杂的算法交易策略也得以被建立(1-3)。随着近几十年来AI技术的不断发展, 算法交易几乎涉及所有的金融市场, 例如股票市场, 期货市场, 虚拟货币交易所等等。但是目前学术界尚未从技术的角度对算法交易中AI引发的影响进行总结性分析, 这是因为算法交易作为一个复杂的交叉学科, 同时涵盖了经济学, 金融学和计算机科学等多个学科门类。同时, 算法交易的复杂性也增加了不同学术背景的研究者进入这一领域的门槛。因此本研究希望能够通过系统性文献分析的方法, 深入探讨当前学术界针对算法交易的方法和实践的最新研究成果。并在此基础上, 进一步研究AI技术的发展对算法交易行业带来的机遇和挑战。
 
 
 
@@ -61,18 +63,39 @@
 
 
 ## 1.2 Zentrale Begriffe
-在这一节, 本研究相关的常用概念被详细阐释和区分, 从而让来自不同研究领域的读者们准确理解不同专业术语的含义。同时, 这些概念在本研究中所代表的具体含义也会被限定, 从而避免读者产生误解。这些概念按照其所属的学科领域分成两类, 即金融市场相关的概念和AI技术相关的概念。
+在这一节, 本研究相关的常用概念被简单阐释和区分, 从而让来自不同研究领域的读者们对于算法交易涉及的不同专业术语的含义具备初步的理解。同时, 这些概念在本研究中所代表的具体含义也会被限定, 从而避免读者产生误解。这些概念按照其所属的学科领域分成两类, 即金融市场相关的概念和AI技术相关的概念。
 
 (这部分可以随着研究的深入不断更新)
+(思考是否需要制作一个Venn图, 将两个领域关联起来)
 
 ### 1.2.1 Finanzmarkt
+这里介绍常见的金融市场相关的概念, 以及市场内部交易的对象。金融领域常见的技术指标会在第二章理论基础中介绍。 
 包括:
-- 算法交易的定义, 发展历程, FinTech
+- 算法交易的定义(与量化交易的关系和区别, 引用), 发展历程, FinTech
 - 常见的金融交易市场, 例如股票, 外汇, 期货, 加密货币......
 - 描述金融交易的专业术语, 上面提到的投资标的物的基本原理
 - 用于衡量不同资产的投资回报率的指标, 例如最常见的是夏普比率
 - 
 
+- [ ] 注意这里不需要分小节, 只需要按照从大到小的逻辑顺序, 即从整个金融市场, 到细分市场类型, 再到术语, 再到技术指标。
+#### 算法交易
+在量化金融领域存在几个相似的概念, 例如量化交易, 算法交易, 高频交易和自动化交易。 为了避免读者混淆这些概念, 它们的具体定义会被详细阐释。尽管有些学者倾向于将这些概念严格区分, 但是这些概念实际上是投资领域不同的AI应用。Quantitative trading uses computer algorithms and programs based on basic or complicated mathematical models to discover and profit from trading opportunities. Algorithmic trading executes orders based on time, price, and volume using pre-programmed trading instructions. High-frequency trading, which is commonly abbreviated as HFT, is a type of trading that makes use of highly advanced computer algorithms to execute a huge number of orders in a very short amount of time (fractions of a second). An automated trading system (ATS), a form of algorithmic trading, employs computer software to issue buy and sell orders and automatically send them to a market center or exchange (2). 
+
+
+有些学者认为, 算法交易也被认为是black-box trading or automated trading并借助计算机上部署的AI模型或者预先定义好的量化交易规则辅助交易者进行投资决策(1-3)。也就是说, 算法交易即可以被通过基于预先设定的规则实现, 也可以通过机器学习的方法实现(s-1-4, s-1-5)。传统意义上的算法交易是基于人类专家的经验或者预设的规则的, 例如跟踪趋势或者mean reversion strategies(1-1)。而在基于机器学习的现代算法交易中, 计算机首先在历史数据上被训练然后在没有人类干涉的情况下进行交易(s-1-4)。这个交易过程可以被看作是一个以收益最大化和风险最小化为目标的决策过程(1-1)。正是因为AI的决策过程不会像人类那样受到情绪波动的影响, 因此计算机的投资决策不会受到情绪带来的负面影响(s-1-4)。
+
+
+
+#### Sharpe ratio
+夏普比率是一个评估一次交易的performance的指标, 该指标能够衡量交易策略的有效性(s-1-3)。夏普比率的计算可以通过以下公式实现 :
+![[Pasted image 20240920125122.png]]
+其中, Rp和Rf分别表示当前交易中的投资组合的回报和无风险回报, 分母则是投资组合回报的标准差.
+
+无风险收益
+
+#### 用于时间序列分析的蜡烛图(candlestik)
+待定
+![[Pasted image 20240920234216.png]]
 
 ### 1.2.2 AI Technology
 - 目前狭义上的AI指的是生成式AI, 或者AGI, 而广义上的AI包括了机器学习, 深度学习和强化学习算法在训练数据集上训练好的模型。在算法交易领域, 目前尚未有生成式AI大规模的应用, 因此我选择在本文中采用广义的AI定义。事实上大多数学者的研究也是这么做的 
@@ -81,26 +104,39 @@
 - 强化学习的定义, 与深度学习的区别。
 - 三种技术分别适合解决的问题类型不同, 因此不存在最好的模型, 研究者需要根据实际项目选择最合适的
 
+- [ ] 同样不需要再分小节, 用分段的方式, 按照从大到小的逻辑顺序, 即 AI 的定义以及进一步的各种学习的定义。
+
+为了给读者提供一个关于本研究的基本的理解, 针对有关于AI的概念进行区分是有必要的。AI comprises any technique that enables computers to mimic human behavior and reproduce or excel over human decision-making to solve complex tasks inde- pendently or with minimal human intervention (1 Russell and Norvig 2021).在下图中, AI相关的概念之间的关系被展示。其中, AI囊括了机器学习, 同时深度学习和强化学习是机器学习的子类. 
+机器学习作为一个含义宽泛的概念, 很多研究者在论文中将机器学习等同于AI, 甚至使用机器学习这个上位概念指代更加确切的深度学习和强化学习。本研究采用明确的定义, 即机器学习是与其他AI技术并列的概念. 当机器学习作为上位概念泛指其他AI相关技术时, 本研究会将其替换为AI。
+机器学习算法能够为算法交易提供一个很有效的工具, 这是因为它允许同时分析一大批金融市场的指标(s-1-1)。 这个分析过程是通过机器学习算法提取金融市场的数据patterns来实现的(2)。根据所解决的问题和可用的数据, 机器学习可以被分为两种类型, 有监督学习和无监督学习(1)。在算法交易中, 有监督学习可以被用于预测某个资产未来的价格走势。但是, According to the efficient-market theory, stock prices should reflect all of the information that is currently accessible, and any price changes that are not based on newly revealed information are therefore intrinsically unpredictable (2).
+
+![[Pasted image 20240921004149.png]](2)
+
+DL is particularly useful in domains with large and high dimensional data, which is why deep neural networks outperform shallow ML algorithms for most applications in which text, image, video, speech, and audio data needs to be processed (1 LeCun et al. 2015). 深度学习通常使用深度神经网络, 该网络典型地包含了超过一个隐藏层, 并且人工神经元被在网状的深度神经网络结构组织。
+
+Reinforcement learning is much more focused on goal-directed learning from interaction than are other approaches to machine learn- ing. Reinforcement learning is concerned with the sequential interac- tion of an agent with its environment. First of all, the agent observes the environment of state, then the agent executes the action resulting from its policy and receives a reward as a result of its action (s-1-8)
+
+Deep Reinforcement Learning (DRL) combines the perceptual capability of deep learning and the control decision making capability of reinforcement learning to learn the mapping between financial market states and trading decisions by interacting with the environment (s-1-8).
 
 
 ## 1.3 Forschungsbeitrag
 > Der erwartete Beitrag dieser Studie besteht darin, durch eine systematische Literaturübersicht die oben genannten (zwei oder drei) potenziellen Forschungsfragen zu beantworten. Dies soll anderen Forschern und Entwicklern eine *fundierte theoretische Grundlage* bieten.
 --> 导师说, 理论基础在FS中仅仅扮演一个次要的角色, 因为 FS 的目的是从 RQ 中获取 ***Erkenntnisgewinnung***. 即einen aktuellen Stand der Forschung zu dem Thema erarbeiten
 
-在这个系统性文献研究中, 我期望实现的贡献是通过对学术界关于算法交易的最新研究成果以及最佳实践的分析, 为其他研究者提供关于该领域中常用的解决方案和实现这些方案所需要的知识基础。本研究还希望通过对其他研究者提出的理论和进行的实践的总结, 讨论AI的引入所带来的机遇和挑战, 这对于市场上的参与者们有不同的意义
+
+
 算法交易作为一个跨学科且对数学和计算机算法有着较高要求的学科, 给来自不同行业背景的研究者和初学者带来了较高的进入门槛。例如, 金融学领域的研究人员在缺乏对AI技术对了解的情况下, 很难无障碍地阅读算法交易和相应的人工智能技术的的论文。而一部分开发者和信息技术从业人员在不了解金融市场规则和投资策略的情况下, 开发出高性能的算法交易工具也是很困难的。同时, 来自不同领域的研究人员在进行学术讨论时, 也会经常面临双向沟通效率低的难题。
+在这个系统性文献研究中, 期望实现的贡献是通过对学术界关于算法交易的最新研究成果以及最佳实践的分析, 为其他研究者提供关于该领域中常用的解决方案和实现这些方案所需要的知识基础。本研究还致力于通过对其他研究者提出的理论和进行的实践的总结, 讨论AI的引入所带来的机遇和挑战. 本研究对于金融交易的参与者们以及其他利益相关者有不同的意义。
 因此, 本研究希望在AI产品被大规模应用的背景下, 为来自不同领域的研究者建立一个稳固的知识基础, 同时在不同领域之间建立起沟通的桥梁。借助本研究的成果, 金融分析领域的研究者可以对算法交易中常用的AI技术建立基本认识, 同时AI领域的专家也能借助本研究将他们的专业知识扩展到一个前景广阔的应用领域。
 
 
-在上述研究动机和研究空隙的基础上,  本研究希望通过系统性文献分析, 回答以下两个研究问题。
+在上述研究动机和研究空隙的基础上,  本研究希望通过对当前算法交易中常用的AI技术进行汇总和分析, 并结合金融市场的特性回答以下两个相互关联的研究问题。第一个研究问题的重点在于, 通过对近5年来的AI在算法交易中应用的研究, 得出当前在不同金融市场广受关注的AI技术。对这个研究问题的回答, 能够为相关开发者和研究者在寻找适合不同金融市场的算法交易技术路线的过程提供明确的指引. 同时, 对第一个研究问题的分析过程同样对第二个研究问题的回答做了贡献。为了找出AI技术的引入所带来的机遇和挑战, 针对不同的AI技术的特点的分析是必不可少的。而由于不同的AI技术对研究者和开发者所具备的知识有不同的要求, 甚至实现不同AI技术所需的硬件也存在显著的差别, 因此不同的AI技术所能够带来的机遇和挑战是不能一概而论的。本研究致力于通过系统性文献研究同时兼顾AI的机遇和挑战, 从而帮助从业者们在性能和成本之间进行取舍。
 
 RQ 1: "*Welche Methoden und Praktiken des algorithmischen Handelns existieren in der Literatur ?*
 
-- [ ] --> 我需要研究当前科研和实践中的现状, 考虑不同的投资标的物/市场上, 算法交易采用的方法和实践
-	- [ ] 这里要提一下传统的算法交易, 即基于预设规则。还有本文的重点: 基于广义AI的方法和实际, 例如机器学习, 深度学习和强化学习, 并在第四章对这些不同的技术路线分别进行分析
-
 RQ2: *"Welche Herausforderungen und Chancen bietet die Integration von AI in bestehende algorithmische Handelssysteme?*
-> :本关于机构投资者的 RQ 3 由于直接相关的文献数量过少, 因此我认为不适合作为一个单独的研究问题。将原本的RQ 3 放到动机部分或者末尾的展望部分更加合适。 
+
+
 
 
 # 2 Theoretischer Hintergrund
@@ -113,7 +149,7 @@ RQ2: *"Welche Herausforderungen und Chancen bietet die Integration von AI in bes
 5. (深度强化学习)
 6. 启发式算法
 
-注意, 本章只涉及不同模型和算法的基本原理, 目的是让读者更好地理解本研究的第四章中的研究成果。
+注意, 本章只涉及**不同模型和算法的基本原理(例如AT常用的机器学习算法原理)**, 目的是让读者更好地理解本研究的第四章中的研究成果。
 
 Festlegung / Beschreibung des Review Scope:
 Typ: Scoping Review
@@ -156,6 +192,8 @@ Ziel: eine fundierte theoretische Grundlage über KI & AT
 适用范围最广: 遗传算法
 
 用于解决优化问题。
+
+## 2.6 LLM
 
 
 # 3 Methodik
