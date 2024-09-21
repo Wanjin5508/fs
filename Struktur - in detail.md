@@ -81,6 +81,7 @@
 #### 算法交易
 在量化金融领域存在几个相似的概念, 例如量化交易, 算法交易, 高频交易和自动化交易。 为了避免读者混淆这些概念, 它们的具体定义会被详细阐释。尽管有些学者倾向于将这些概念严格区分, 但是这些概念实际上是投资领域不同的AI应用。Quantitative trading uses computer algorithms and programs based on basic or complicated mathematical models to discover and profit from trading opportunities. Algorithmic trading executes orders based on time, price, and volume using pre-programmed trading instructions. High-frequency trading, which is commonly abbreviated as HFT, is a type of trading that makes use of highly advanced computer algorithms to execute a huge number of orders in a very short amount of time (fractions of a second). An automated trading system (ATS), a form of algorithmic trading, employs computer software to issue buy and sell orders and automatically send them to a market center or exchange (2). 
 
+尽管这些概念的准确定义存在明确的界限, 但是他们彼此之间关联也不能被忽视。例如, 高频交易(HFT)的研究和实践同样也可以被AI技术实现(s-1-10)。事实上, 根据文献检索的结果, 大多是近5年内的研究并没有对算法交易和高频交易的概念进行明确区分。因此, 考虑到本研究的重点仅局限在AI对算法交易的影响, 本研究采用(1-7)中的定义, 即高频交易在本研究中被视为算法交易的一个子集。
 
 有些学者认为, 算法交易也被认为是black-box trading or automated trading并借助计算机上部署的AI模型或者预先定义好的量化交易规则辅助交易者进行投资决策(1-3)。也就是说, 算法交易即可以被通过基于预先设定的规则实现, 也可以通过机器学习的方法实现(s-1-4, s-1-5)。传统意义上的算法交易是基于人类专家的经验或者预设的规则的, 例如跟踪趋势或者mean reversion strategies(1-1)。而在基于机器学习的现代算法交易中, 计算机首先在历史数据上被训练然后在没有人类干涉的情况下进行交易(s-1-4)。这个交易过程可以被看作是一个以收益最大化和风险最小化为目标的决策过程(1-1)。正是因为AI的决策过程不会像人类那样受到情绪波动的影响, 因此计算机的投资决策不会受到情绪带来的负面影响(s-1-4)。
 
@@ -96,6 +97,9 @@
 #### 用于时间序列分析的蜡烛图(candlestik)
 待定
 ![[Pasted image 20240920234216.png]]
+
+
+
 
 ### 1.2.2 AI Technology
 - 目前狭义上的AI指的是生成式AI, 或者AGI, 而广义上的AI包括了机器学习, 深度学习和强化学习算法在训练数据集上训练好的模型。在算法交易领域, 目前尚未有生成式AI大规模的应用, 因此我选择在本文中采用广义的AI定义。事实上大多数学者的研究也是这么做的 
@@ -162,6 +166,13 @@ Ziel: eine fundierte theoretische Grundlage über KI & AT
 
 举例论证, 对比个人投资者在一定时间段内做投资决策的方式和算法交易的差异。
 
+高频交易的起源可以追溯到1998年(s-1-10, 7)。正如在第一章提到的, 高频交易被看作算法交易的一种特殊形式。算法交易通常被用于发达金融市场, 例如美国的股票市场或者其他发达的市场货币(s-1-10)。In fact, in 2009–2010, it was estimated that 60–70% of trading occurred is through HFT(s-1-10, 3). In a recent report, JP Morgan confirmed that about 60% of trading on exchanges is algorithmic (s-1-10, 4).
+
+HFT is the use of computerized trading algorithms to buy and sell assets quickly and frequently, with a short holding period – to the single minute, second, or even millisecond level – to earn miniscule margins on each trade(s-1-10. 3 Hossain, 2022). 因此理想化的高频交易中, 动态交易策略通常被采用并且动态交易策略应该有能力根据金融市场的变化趋势自动被调整(s-1-9)。在学术界, 采用基于深度强化学习算法设计并优化采用动态交易策略的模型已经成为主流。Market-making, liquidity provision, and arbitrage opportunities in fragmented markets are key areas where HFT excels (3).
+
+
+
+
 ## 2.2 Machine Learning
 
 分成小章节, 分类标准是 2.2.1 监督学习 和 2.2.2 无监督学习, 分别介绍文献中常用的方法中涉及的机器学习算法的原理:
@@ -171,6 +182,20 @@ Ziel: eine fundierte theoretische Grundlage über KI & AT
 - ...
 
 再加上这些算法各自的用途, 不仅局限在算法交易
+
+
+提示静态交易
+
+Machine learning (ML) has become a game-changer in algorithmic trading, allowing systems to learn from data and adapt to changing market conditions. ML-based approaches include various techniques such as supervised learning, unsupervised learning, and reinforcement learning. These algorithms analyze historical data, identify patterns, and make predictions about future price movements. The advantage of ML is its ability to uncover non-linear relationships and adapt to evolving market dynamics (3).
+
+机器学习方法在量化金融领域被应用于创造更加精确的预测和提升金融模型的性能。 但是值得关注的是, 并不是所有的机器学习模型能够解决全部问题。具体的模型选择需要根据所解决的问题特征和可用的数据。因此machine learning and finance professionals should work together to obtain the best results. (2)
+
+分类算法作为一种在金融应用中常用的技术, is supposed to categorize a certain stock as a “STRONG BUY” or a “STRONG SELL,” as well as “BUY,” “SELL,” and “HOLD.”(2). 一个常用的分类算法是朴素贝叶斯。 the procedure uses the Naive-Bayes classification algorithm that learns to predict the decision strategy once observed the set of predictors(s-1-1).
+但是数据集里的不均匀分布的类别标签是分类任务变得困难(2), 因此如何解决这一问题并提升机器学习模型运行效率是亟待解决的问题。
+
+
+与分类问题中, 类别标签这个离散的目标变量不同, 回归问题的目标变量是连续的。例如, 预测一项资产未来的价格就属于回归问题(2)。但是由于金融市场的复杂性, 使用简单的线性回归模型通常无法拟合多个自变量的回归问题。Ridge Regression is a model of approximating the coefficients of multiple regression frameworks in incidents where the independent variables are greatly correlated. Ridge regression is specifically instrumental for reducing the challenge of multicollinearity in linear regression, which mostly happens in algorithms with large quantities of parameters(1-3).
+
 
 ## 2.3 Deep Learning
 同上, 常见的模型:
@@ -182,10 +207,36 @@ Ziel: eine fundierte theoretische Grundlage über KI & AT
 
 再加上深度学习模型的常见的用途, 不仅仅局限在算法交易领域。
 
+深度学习技术是一种机器学习的类型, 使用人工神经网络(ANNs). 人工神经网络由输入层、隐藏层、输出层组成, 见下图. Each artificial neuron has a weight and threshold and connects to others. Nodes deliver data to the next tier if their output exceeds the threshold. 为了模拟人脑, 人工神经网络的相邻层次之间互相连接(2 ..)。
+
+![[Pasted image 20240921175802.png]]
+
+针对不同的问题类型, 深度学习提供了多种模型。在算法交易中, 常用的模型有以下几种:
+CNN
+卷积神经网络起初是为了处理图像和空间数据设计。CNN 通过卷积层提取特征，使用池化层减少特征的维度，并在最后使用全连接层进行分类或回归。卷积层可以捕获局部空间特征，而池化层有助于减少计算复杂度并防止过拟合。
+
+图示
+
+RNN
+RNN 是处理序列数据的神经网络，其最大的特点是具有循环结构，能够记忆先前的输入信息。在时间序列、自然语言处理等任务中，RNN 可以利用时间或顺序上的依赖关系，但传统的RNN存在梯度消失问题，限制了长序列的学习能力。
+
+LSTM
+LSTM 是为了解决 RNN 的梯度消失问题而提出的一种改进模型。LSTM 引入了“记忆单元”和“门”机制（输入门、遗忘门、输出门），可以有效捕捉长序列中的远程依赖关系，因此在处理长时间依赖的任务中表现优异，如自然语言处理和时间序列预测。
+
+
+
 ## 2.4 Reinforcement learning
 相比于 2.2 和 2.3 有什么特殊之处, 以及强化学习所能够解决的问题
 
 强化学习算法的基本组成部分, 以及最常见的变体
+
+机器学习和深度学习由于其训练过程的本质, 无法很好地适应动态的交易策略。而静态交易策略一旦被确定, 该策略在整个交易过程中将保持不变. 在金融市场的不确定性提升时, 静态交易策略将会面临极大的风险。因此, 一个能够根据金融市场环境变化而自我优化的交易策略是必要的。强化学习能够通过智能体与环境的交互并借助奖惩机制实现交易策略的自我优化  (s-1-9)。
+
+
+![[Pasted image 20240921121323.png]]
+
+
+一个特殊的变体是深度强化学习, 
 
 
 ## 2.5 启发式算法
@@ -194,6 +245,7 @@ Ziel: eine fundierte theoretische Grundlage über KI & AT
 用于解决优化问题。
 
 ## 2.6 LLM
+并入深度学习
 
 
 # 3 Methodik
