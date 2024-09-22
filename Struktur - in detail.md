@@ -193,6 +193,11 @@ Machine learning (ML) has become a game-changer in algorithmic trading, allowing
 分类算法作为一种在金融应用中常用的技术, is supposed to categorize a certain stock as a “STRONG BUY” or a “STRONG SELL,” as well as “BUY,” “SELL,” and “HOLD.”(2). 一个常用的分类算法是朴素贝叶斯。 the procedure uses the Naive-Bayes classification algorithm that learns to predict the decision strategy once observed the set of predictors(s-1-1).
 但是数据集里的不均匀分布的类别标签是分类任务变得困难(2), 因此如何解决这一问题并提升机器学习模型运行效率是亟待解决的问题。
 
+- [x] 
+Perhaps one of the simplest yet highly-effective techniques is known as Support Vector Machines (SVM) (Janardhanan et al., 2015; Pal & Mather, 2004). SVMs are used to identify the hyperplane that best separates a binary sampling. If we imagine a set of points mapped onto a 2d plane, the SVM will find the best line that divides the two different classifications in half. This technique can easily be expanded to work on higher-dimensional data, and since it is so simple, it becomes intuitive to see the reason behind a classification(s-1-3).
+其他流行的分类方法有决策树和随机森林。这两种基于树的分类方法流行的原因在于其可解释性。Random Forest operates by constructing a multitude of decision trees at training time and outputting he classification of the individual trees (s-1-3, ).
+
+
 
 与分类问题中, 类别标签这个离散的目标变量不同, 回归问题的目标变量是连续的。例如, 预测一项资产未来的价格就属于回归问题(2)。但是由于金融市场的复杂性, 使用简单的线性回归模型通常无法拟合多个自变量的回归问题。Ridge Regression is a model of approximating the coefficients of multiple regression frameworks in incidents where the independent variables are greatly correlated. Ridge regression is specifically instrumental for reducing the challenge of multicollinearity in linear regression, which mostly happens in algorithms with large quantities of parameters(1-3).
 
@@ -207,36 +212,51 @@ Machine learning (ML) has become a game-changer in algorithmic trading, allowing
 
 再加上深度学习模型的常见的用途, 不仅仅局限在算法交易领域。
 
-深度学习技术是一种机器学习的类型, 使用人工神经网络(ANNs). 人工神经网络由输入层、隐藏层、输出层组成, 见下图. Each artificial neuron has a weight and threshold and connects to others. Nodes deliver data to the next tier if their output exceeds the threshold. 为了模拟人脑, 人工神经网络的相邻层次之间互相连接(2 ..)。
-
+ANN
+深度学习技术是一种机器学习的类型, 使用人工神经网络(ANNs). 人工神经网络由输入层、隐藏层、输出层组成, 见下图. 当一个ANN拥有多于一个隐藏层的时候, 就被称为Deep Neural Network (DNN), 也被称为Deep Feedforward Network (DFN) 或者 Multi-Layer Perceptron(MLP)。
+Each artificial neuron has a weight and threshold and connects to others. Nodes deliver data to the next tier if their output exceeds the threshold. 为了模拟人脑, 人工神经网络的相邻层次之间互相连接(2 ..)。ANN的输入特征就是经过了预处理的关于金融市场的数据, 输出则是被期望的预测指标。deep learning combines features through multilayer network structures and nonlinear transformations with strong perception and representation capabilities(1-1). 
 ![[Pasted image 20240921175802.png]]
 
 针对不同的问题类型, 深度学习提供了多种模型。在算法交易中, 常用的模型有以下几种:
+
+
 CNN
 卷积神经网络起初是为了处理图像和空间数据设计。CNN 通过卷积层提取特征，使用池化层减少特征的维度，并在最后使用全连接层进行分类或回归。卷积层可以捕获局部空间特征，而池化层有助于减少计算复杂度并防止过拟合。
 
-图示
 
 RNN
-RNN 是处理序列数据的神经网络，其最大的特点是具有循环结构，能够记忆先前的输入信息。在时间序列、自然语言处理等任务中，RNN 可以利用时间或顺序上的依赖关系，但传统的RNN存在梯度消失问题，限制了长序列的学习能力。
+RNNs have found success in various domains, particularly in time series forecasting, thanks to their significant predictive capabilities (1-5). 作为处理序列数据的神经网络，RNN最大的特点是具有循环结构，能够记忆先前的输入信息。在时间序列、自然语言处理等任务中，RNN 可以利用时间或顺序上的依赖关系，但传统的RNN存在梯度消失问题，限制了长序列的学习能力。
 
 LSTM
-LSTM 是为了解决 RNN 的梯度消失问题而提出的一种改进模型。LSTM 引入了“记忆单元”和“门”机制（输入门、遗忘门、输出门），可以有效捕捉长序列中的远程依赖关系，因此在处理长时间依赖的任务中表现优异，如自然语言处理和时间序列预测。
+LSTM 是为了解决 RNN 的梯度消失问题而提出的一种改进模型。LSTM 引入了“记忆单元”和“门”机制（输入门、遗忘门、输出门），可以有效捕捉长序列中的远程依赖关系，因此在处理长时间依赖的任务中表现优异，同时LSTM可以借助其内部状态, 即记忆 , 处理可变长度的输入序列(1-1)。在下图LSTM结构图中, 一个LSTM单元由细胞ct, 输入门it, 输出门ot, 遗忘门ft组成。The cell memorizes values at arbitrary time intervals and the three gates regulate the flow of information into and out of the cell. (1-1)
+
+![[Pasted image 20240922000026.png]](1-1)
+
+当模型的输入特征例如时间序列, 是相同长度的, 那么从更多角度提取特征是可能的。例如, the output of a moment is not only related to the information of past moments, but also to the information of subsequent moments. 因此, 额外添加一个神经网络层用于反向传递信息从而提升模型的性能是可行的。实现这个功能的LSTM叫做双向LSTM。The bidirectional LSTM consists of two layers of LSTM, which have the same input but different directions of information transmission (1-1) [47].
 
 
+
+
+Transformer
+Transformer 是一种基于注意力机制的模型，它抛弃了传统的RNN结构，完全依赖自注意力机制来捕捉序列中的全局依赖关系。Transformer 的主要组成部分包括编码器-解码器结构、多头自注意力机制、位置编码等。它在自然语言处理任务中表现出色，尤其是在机器翻译和语言生成任务中。
 
 ## 2.4 Reinforcement learning
 相比于 2.2 和 2.3 有什么特殊之处, 以及强化学习所能够解决的问题
 
 强化学习算法的基本组成部分, 以及最常见的变体
 
-机器学习和深度学习由于其训练过程的本质, 无法很好地适应动态的交易策略。而静态交易策略一旦被确定, 该策略在整个交易过程中将保持不变. 在金融市场的不确定性提升时, 静态交易策略将会面临极大的风险。因此, 一个能够根据金融市场环境变化而自我优化的交易策略是必要的。强化学习能够通过智能体与环境的交互并借助奖惩机制实现交易策略的自我优化  (s-1-9)。
+机器学习和深度学习由于其训练过程的本质, 无法很好地适应动态的交易策略。而静态交易策略一旦被确定, 该策略在整个交易过程中将保持不变. 在金融市场的不确定性提升时, 静态交易策略将会面临极大的风险。因此, 一个能够根据金融市场环境变化而自我优化的交易策略是必要的。不同于前面提到的机器学习和深度学习方法, 强化学习能够通过智能体与环境的交互并借助奖惩机制实现交易策略的自我优化, 进而找到最优的动态交易策略  (s-1-9, 1-1)。
+
+如下图所示的是一个包含单个智能体的强化学习模型。该模型包含两个部分, 分别是智能体和环境。As a result of the interaction between the agent and the environment in a recurring cycle, a chain of states, actions, and rewards is created. According to this framework, an intelligent agent performs an action (A t) concerning the current state at time (t) and receives a reward ( R t+1) as a result of the performed action. Then, the agent observes a new state (S t+1) and performs the next action based on the new state. This iterative framework continues until the agent converges to an optimal policy by maximizing a notion of cumulative reward (s-1-4).
+
+当一个环境中同时存在多个智能体时, 深度学习框架与单个智能体类似。区别在于, 多个智能体之间也会进行交互, 这种交互可以是合作的或者竞争的(s-1-4 (Busoniu et al., 2006)。
 
 
 ![[Pasted image 20240921121323.png]]
 
 
-一个特殊的变体是深度强化学习, 
+一个特殊的变体是深度强化学习, Q function in deep reinforcement learning represents the expected cumulative reward that an agent can obtain by taking a particular action in a given state and following a particular strategy thereafter.Q networks are designed to learn an agent’s optimal action selection strategy by estimating the Q value (expected cumulative reward) for different state–action pair. The Q-Network structure is a key part of deep reinforcement learning algorithms, which has an important impact on the final results of the model (s-1-5).
+Q-learning is a model-free off-policy RL method in which the agent aims to obtain the optimal state-action-value function by interacting with the environment. It maintains a state-action table Q[S, A] called as Q-table containing Q-values for every state-action pair (s-1-9).
 
 
 ## 2.5 启发式算法
