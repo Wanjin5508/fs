@@ -276,10 +276,19 @@ Exklusionskriterien: alt, Programmierung, Mathematik
 文献检索过程:
 [[Literatur Recherche - Protocol]]
 
-从两个数据库中共检索出32篇文献。在第三章, 我需要写出检索时采用的字符串, 和两个数据库。
+从3个数据库中共检索出32篇文献。在第三章, 我需要写出检索时采用的字符串, 和两个数据库。
 也要提及保留和删除的原则。
 
 为了将检索出的文献进行更好的管理, 我会按照研究者在每篇论文中提出的方法在表格中分类标记。分类的标准是作者采用的技术路线, 即第二章提到的4种。此外, 我还会在表格中增加一列用于展示该研究涉及的具体投资市场, 例如股票, 外汇等。
+
+统一在3个数据库中选择2019年以后的期刊文章, 因为GPT2模型在2019年2月被发明。尽管GPT2的基础模型Transformer早在2017年就被谷歌的几个工程师提出, 但是其大规模应用给科研领域带来的巨大影响发生于2019年以后。此后, 以Open AI的Chatgpt为代表的多种AI应用逐渐进入大众的视野, 并被应用于工业界。
+
+## 3.1 Aufbau der Suchstrategie
+Die Suchstrategie bildet eine wichtige Grundlage für das Suchen nach passender und relevanter Literatur. Im Folgenden wird der Prozess der Suche transparent dargelegt. Die Basis der Literaturrecherche bilden Datenbanken wissenschaftlicher Quellen. Da die Nutzung einer einzelnen Datenbank zu einseitig wäre und nicht das gesamte Forschungsspektrum abdecken könnte, bezog sich die Suche auf drei Datenbanken. Die in dieser Recherche verwendeten Datenbanken „Scopus“, „EBSCOhost“  und „DBLP“ wurden mit unterschiedlichen Strategien durchsucht, sodass ein einheitliches Vorgehen und eine Vergleichbarkeit gewährleistet werden konnten. Um diese Vergleichbarkeit herstellen zu können, wurde in allen Datenbanken mit den gleichen Suchstrings gearbeitet. Diese bestanden in ihrem Kern aus den allgemeinen Wörtern „learning analytics“, „education“ und „design“. Um die Übersicht zu wahren und die Suchergebnisse eingrenzen zu können, wurden die Suchen in den unterschiedlichen Datenbanken von Zeit zu Zeit spezifischer ausgerichtet und an den vorliegenden Forschungsbereich angepasst. Die Datenbanken unterscheiden sich in ihrer Möglichkeit, gewisse Suchfelder anzupassen und die Suche mittels spezieller Filterfelder zu konfigurieren. So wurde in den Datenbanken „Scopus“, „Web of Science“  und „Science Direct“ mit der Filtermaske „Article Title, Abstract and Keywords“ und in den Datenbanken sowie „EBSCOhost“ mit der Filtermaske „All Fields“ gesucht. Die Suchergebnisse in allen vier Datenbanken, basieren zum größten Teil auf englischsprachigen Fachartikeln, sodass die Arbeit mit deutschen Begriffen bzw. der deutschen Übersetzung der jeweiligen Suchtexte keine weiteren passenden Ergebnisse bringen. Deswegen wurden Suchen mit deutschen Wörtern im Fortlaufenden nicht berücksichtigt.
+
+
+
+
 
 # 4 Ergebnisse
 - Die zur Beantwortung der Forschungsfragen verwendeten Literatur und theoretischen Grundlagen.
