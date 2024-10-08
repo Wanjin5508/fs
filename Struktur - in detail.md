@@ -284,10 +284,34 @@ Exklusionskriterien: alt, Programmierung, Mathematik
 统一在3个数据库中选择2019年以后的期刊文章, 因为GPT2模型在2019年2月被发明。尽管GPT2的基础模型Transformer早在2017年就被谷歌的几个工程师提出, 但是其大规模应用给科研领域带来的巨大影响发生于2019年以后。此后, 以Open AI的Chatgpt为代表的多种AI应用逐渐进入大众的视野, 并被应用于工业界。
 
 ## 3.1 Aufbau der Suchstrategie
-Die Suchstrategie bildet eine wichtige Grundlage für das Suchen nach passender und relevanter Literatur. Im Folgenden wird der Prozess der Suche transparent dargelegt. Die Basis der Literaturrecherche bilden Datenbanken wissenschaftlicher Quellen. Da die Nutzung einer einzelnen Datenbank zu einseitig wäre und nicht das gesamte Forschungsspektrum abdecken könnte, bezog sich die Suche auf drei Datenbanken. Die in dieser Recherche verwendeten Datenbanken „Scopus“, „EBSCOhost“  und „DBLP“ wurden mit unterschiedlichen Strategien durchsucht, sodass ein einheitliches Vorgehen und eine Vergleichbarkeit gewährleistet werden konnten. Um diese Vergleichbarkeit herstellen zu können, wurde in allen Datenbanken mit den gleichen Suchstrings gearbeitet. Diese bestanden in ihrem Kern aus den allgemeinen Wörtern „learning analytics“, „education“ und „design“. Um die Übersicht zu wahren und die Suchergebnisse eingrenzen zu können, wurden die Suchen in den unterschiedlichen Datenbanken von Zeit zu Zeit spezifischer ausgerichtet und an den vorliegenden Forschungsbereich angepasst. Die Datenbanken unterscheiden sich in ihrer Möglichkeit, gewisse Suchfelder anzupassen und die Suche mittels spezieller Filterfelder zu konfigurieren. So wurde in den Datenbanken „Scopus“, „Web of Science“  und „Science Direct“ mit der Filtermaske „Article Title, Abstract and Keywords“ und in den Datenbanken sowie „EBSCOhost“ mit der Filtermaske „All Fields“ gesucht. Die Suchergebnisse in allen vier Datenbanken, basieren zum größten Teil auf englischsprachigen Fachartikeln, sodass die Arbeit mit deutschen Begriffen bzw. der deutschen Übersetzung der jeweiligen Suchtexte keine weiteren passenden Ergebnisse bringen. Deswegen wurden Suchen mit deutschen Wörtern im Fortlaufenden nicht berücksichtigt.
+Die Suchstrategie bildet eine wichtige Grundlage für das Suchen nach passender und relevanter Literatur. Im Folgenden wird der Prozess der Suche transparent dargelegt. Die Basis der Literaturrecherche bilden Datenbanken wissenschaftlicher Quellen. Da die Nutzung einer einzelnen Datenbank zu einseitig wäre und nicht das gesamte Forschungsspektrum abdecken könnte, bezog sich die Suche auf drei Datenbanken. Die in dieser Recherche verwendeten Datenbanken „Scopus“, „EBSCOhost“  und „DBLP“ wurden mit zwei unterschiedlichen Strategien durchsucht, sodass ein einheitliches Vorgehen und eine Vergleichbarkeit gewährleistet werden konnten. Um diese Vergleichbarkeit herstellen zu können, wurde in „Scopus“ und „EBSCOhost“  mit den gleichen Suchstrings gearbeitet. Der Grund liegt darin, dass „Scopus“ und „EBSCOhost“ 能够支持相同格式的检索词。然而, 由于DBLP被使用同样的检索词检索, 无法输出任何结果。因此更加普遍化的检索词被应用于DBLP, 从而确保本研究所涉及的相关研究能够被检索出来。这种更加普遍化的检索结果对于本研究初期, 从多个不同角度对研究问题进行分析具有贡献。
+
+Diese Suchstrings bestanden in ihrem Kern aus den allgemeinen Wörtern „Artificial Intelligence“ und „algorithmic trading“. Um die Übersicht zu wahren und die Suchergebnisse eingrenzen zu können, wurden die Suchen in den unterschiedlichen Datenbanken von Zeit zu Zeit spezifischer ausgerichtet und an den vorliegenden Forschungsbereich angepasst. Die Datenbanken unterscheiden sich in ihrer Möglichkeit, gewisse Suchfelder anzupassen und die Suche mittels spezieller Filterfelder zu konfigurieren. So wurde in den Datenbanken „Scopus“ mit der Filtermaske „Article Title, Abstract and Keywords“ und in den Datenbanken sowie „EBSCOhost“ und „DBLP“ mit der Filtermaske „All Fields“ gesucht. Die Suchergebnisse in allen drei Datenbanken, basieren zum größten Teil auf englischsprachigen Fachartikeln, sodass die Arbeit mit deutschen Begriffen bzw. der deutschen Übersetzung der jeweiligen Suchtexte keine weiteren passenden Ergebnisse bringen. Deswegen wurden Suchen mit deutschen Wörtern im Fortlaufenden nicht berücksichtigt.
+
+## 3.2  Eingrenzungsprozess
+Während des Eingrenzungsprozesses der Suchergebnisse wurden die in Abschnitt 3.1 vorgestellten Datenbanken der Reihe nach, nach passender Literatur durchsucht. 由于在2019年, 以GPT2为代表的开源大语言模型的出现导致了AI领域相关研究的迅速发展, 因此本研究在不同的数据库中进行文献检索时, 只考虑2019年以后的贡献。这样一来, 本研究能够同时考虑以神经网络为基础的传统AI技术和以大语言模型为基础的生成式AI技术. Als Grundlage der Suche fungierte die Datenbank „DBLP“. Begonnen wurde mit der Suche nach dem Suchstring „algorithmic trading“ in den Suchfeldern des Titels, des Abstracts und der Keywords des Autors, wobei am 10.09.2024 97 Ergebnisse erzielt wurden. 
+
+Die hohe Anzahl der Ergebnisse und die unspezifische Suche führen dazu, dass diese Ergebnisse für eine vertiefende Betrachtung nicht in Frage kommen. Eine Suche mit den Suchstrings „“algorithmic trading“ AND „AI“ returnierte am 10.09.2024 57 Ergebnisse. Da diese Anzahl an Ergebnissen nicht ganz ausreichend war, um als Grundlage für ein Abstract- oder Titelscreening zu fungieren, musste die Suche noch durch den Eingrenzungsprozess verfeinert werden. 
 
 
+Die zweite Datenbank „Scopus“ brachte am 10.09.2024 mit den gleichen Suchstrings 28 Treffer, bei denen keine Dopplungen vorkamen. 12 der 28 Ergebnisse waren bereits in der Gesamtübersicht aufgenommen, sodass
+die Anzahl sich von 57 auf 73 Texte erhöhte.
 
+
+Als letzte Datenbank wurde „EBSCOhost“, im Speziellen die Teildatenbanken „Business Source Complete“ verwendet. Mithilfe der Suchstrings der “( "Artificial Intelligence" OR "AI" OR "Machine Learning" ) AND ( "algorithmic trading" OR "automated trading") AND ( "best practices" OR "methodologies" OR "strategies" )mit dem Suchfiltern „All Fields“ erzielte die Suche am 10.09.2024 16 Ergebnisse. Nachdem innerhalb dieser Ergebnisse 1 Dopplung entfernt wurde, wurden die gefundenen Artikel zur gesammelten Übersicht hinzugefügt. 7 der 16 neuen Artikel waren in der Liste bereits vorhanden, sodass die aktualisierte Übersicht 82 Texte beinhaltete.
+
+
+Aufgrund der Suchen in den drei unterschiedlichen Datenbanken konnten demnach 82 Ergebnisse in die Gesamtübersicht aufgenommen werden. Die einzelnen Suchvorgänge inklusive der erzielten Treffer werden in Tabelle 1 aufgezeigt.
+
+![[Pasted image 20241007171728.png]]
+
+Nachdem die zu untersuchende Grundlage geschaffen wurde, begann der erste Schritt des Eingrenzungsprozesses. Mithilfe des Titelscreenings wurden die Titel der 82 Ergebnisse auf ihren Bezug zum Forschungsthema untersucht. Artikel, bei denen kein Zusammenhang mit einem Algorithmic Trading bzw. Artificial Intelligence erkennbar waren, wurden gestrichen. Des Weiteren wurden Titel entfernt, die auf zu spefizifische Sachverhalte (z.B. Mathematik oder Programmierung) hindeuteten und demnach keine Übertragung auf die Allgemeinheit zu ließen. Aufgrund der Suchbegriffe waren die Ergebnisse in ihrem Zweck und Inhalt stark differenziert, sodass lediglich 51 Artikel übernommen wurden.
+
+Diese 51 gefilterten Texte wurden im zweiten Schritt einem Abstractscreening unterzogen. Auch hier lag der Fokus auf einem Inhalt, der relevante Sachverhalte anspricht. Außerdem wurden Texte entfernt, die nach dem Lesen des Abstracts, als „am Thema vorbei“ oder als „zu spezifisch“ definiert wurden. Alle nicht relevanten Texte wurden demnach aus der Liste gestrichen, sodass von 51 Artikeln, noch 34 in den letzten Eingrenzungsschritt übernommen wurden.
+
+Beim dritten Schritt wurden die 34 Artikel einer Volltextprüfung unterzogen, bei der keine weiteren Texte aus der Liste entfernt wurden. Die finale Gesamtübersicht fasste abschließend 34 Artikel, welche später durch sechs, per Rückwärtssuche identifizierte, Texte auf 40 Artikel erweitert wurde. Der gesamte Eingrenzungsprozess wird in Abbildung 1 veranschaulicht.
+
+![[Pasted image 20241007171756.png]]
 
 
 # 4 Ergebnisse
@@ -354,7 +378,6 @@ Die Suchstrategie bildet eine wichtige Grundlage für das Suchen nach passender 
 
 
 # 5 Diskussion
-
 ## 5.1 文献中的方法和实践
 把第四章进行总结, 从而回答第一个研究问题: 
 - *Welche Methoden und Praktiken des algorithmischen Handelns existieren in der Literatur ?*
