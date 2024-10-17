@@ -192,4 +192,7 @@ Um die zweite Forschungsfrage zu beantworten, muss ich im fünften Kapitel genau
 - RQ 2: _"Welche Herausforderungen und Chancen bietet die Integration von KI in bestehende algorithmische Handelssysteme?"_
 
 ## 5.3 Reflexion und Ausblick
+
+HFT(or AT) has become an important part of futures markets around the globe, and its role is growing with advancing technology for exchanges and traders, especially for the Asia‐Pacific markets(1-7). 
+
 Ausblick auf zukünftige Forschungen, wobei zwischen allgemeiner KI und generativer KI (basierend auf großen Sprachmodellen) unterschieden wird.

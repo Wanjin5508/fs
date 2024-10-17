@@ -159,18 +159,27 @@ Festlegung / Beschreibung des Review Scope:
 Typ: Scoping Review
 Ziel: eine fundierte theoretische Grundlage über KI & AT
 
-## 2.1 高频交易
-作为传统的算法交易方法, 需要被提及的原因是, 我需要回答第二个研究问题。
+## 2.1 ~~高频交易~~ 算法交易
+- 作为传统的算法交易方法, 需要被提及的原因是, 我需要回答第二个研究问题。
 
-高频交易的原理以及为什么算法交易采用高频交易
+- 高频交易的原理以及为什么算法交易采用高频交易
 
-举例论证, 对比个人投资者在一定时间段内做投资决策的方式和算法交易的差异。
+- 举例论证, 对比个人投资者在一定时间段内做投资决策的方式和算法交易的差异。
 
-高频交易的起源可以追溯到1998年(s-1-10, 7)。正如在第一章提到的, 高频交易被看作算法交易的一种特殊形式。算法交易通常被用于发达金融市场, 例如美国的股票市场或者其他发达的市场货币(s-1-10)。In fact, in 2009–2010, it was estimated that 60–70% of trading occurred is through HFT(s-1-10, 3). In a recent report, JP Morgan confirmed that about 60% of trading on exchanges is algorithmic (s-1-10, 4).
+- [ ] 
+algorithmic trading is focused on using computer algorithms to automate a predefined trading strategy (2-3). A trading strategy is typically characterised by some indicator or signal derived from market data, helping the trader decide when to best buy and sell certain assets (2-3, 3). 借助算法交易, 交易者们能够更迅速地在市场上进行买卖操作, 从而获取更多利润. 算法交易通常被用于发达金融市场, 例如美国的股票市场或者其他发达的市场货币(s-1-10)。In fact, in 2009–2010, it was estimated that 60–70% of trading occurred is through HFT(s-1-10, 3). In a recent report, JP Morgan confirmed that about 60% of trading on exchanges is algorithmic (s-1-10, 4). 
+为了确保交易在不同市场中被高效执行, 高频交易的概念被引入。高频交易的起源可以追溯到1998年(s-1-10, 7)。正如在第一章提到的, 高频交易被看作算法交易的一种特殊形式。HFT is the use of computerized trading algorithms to buy and sell assets quickly and frequently, with a short holding period – to the single minute, second, or even millisecond level – to earn miniscule margins on each trade(s-1-10. 3 Hossain, 2022). Market-making, liquidity provision, and arbitrage opportunities in fragmented markets are key areas where HFT excels (3). 因此理想化的高频交易中, 动态交易策略通常被采用并且动态交易策略应该有能力根据金融市场的变化趋势自动被调整(s-1-9)。在学术界, 采用基于深度强化学习算法设计并优化采用动态交易策略的模型已经成为主流, 例如(2-3)等人认为, 强化学习和算法交易是一个完美的匹配。
 
-HFT is the use of computerized trading algorithms to buy and sell assets quickly and frequently, with a short holding period – to the single minute, second, or even millisecond level – to earn miniscule margins on each trade(s-1-10. 3 Hossain, 2022). 因此理想化的高频交易中, 动态交易策略通常被采用并且动态交易策略应该有能力根据金融市场的变化趋势自动被调整(s-1-9)。在学术界, 采用基于深度强化学习算法设计并优化采用动态交易策略的模型已经成为主流。Market-making, liquidity provision, and arbitrage opportunities in fragmented markets are key areas where HFT excels (3).
+- [ ] --> *考虑AT和QT在定义上的区别和联系, 并强调二者在高频交易领域中的界限变得模糊, 许多高频交易策略既包含量化建模，也包含复杂的算法执行* [[definitions#AT vs. QT]]
 
-
+> [!danger]
+> 
+> - [ ] 考虑算法交易的明确定义以及和其他相关概念的关联和差异
+> - [ ] 冰山订单等概念
+> - [ ] 金融市场多空博弈过程, 以及原理
+> - [ ] 传统意义的算法交易事基于数学和统计的
+> - [ ] 
+> - [ ] 需要考虑投资市场中的极端特殊事件, 算法交易并不适用于这种情况。--> 作为展望和未来研究提示 [[#5.3 反省和展望]]
 
 
 ## 2.2 Machine Learning
@@ -259,6 +268,11 @@ Transformer 是一种基于注意力机制的模型，它抛弃了传统的RNN�
 Q-learning is a model-free off-policy RL method in which the agent aims to obtain the optimal state-action-value function by interacting with the environment. It maintains a state-action table Q[S, A] called as Q-table containing Q-values for every state-action pair (s-1-9).
 
 
+## 2.5 Markov decision process
+- [ ] 
+according to the definition of the Markov decision process, when the environment state is fully observable, the optimal strategy is only related to the current state, without considering historical information (1-1).
+
+
 ## 2.5 启发式算法
 适用范围最广: 遗传算法
 
@@ -314,7 +328,8 @@ Beim dritten Schritt wurden die 34 Artikel einer Volltextprüfung unterzogen, be
 ![[Pasted image 20241007171756.png]]
 
 
-# 4 Ergebnisse
+# 4 Ergebnisse --> [[4 Ergebnisse]]
+
 - Die zur Beantwortung der Forschungsfragen verwendeten Literatur und theoretischen Grundlagen.
 - Ich hoffe, aus den Referenzen die Verbindungen zwischen verschiedenen Forschungsfragen zu identifizieren und diese Fragen in einer spezifischen logischen Reihenfolge zu arrangieren.
 - Beachtung der Kombination verschiedener Autorenmeinungen.
@@ -335,14 +350,6 @@ Beim dritten Schritt wurden die 34 Artikel einer Volltextprüfung unterzogen, be
 
 值得注意的是, 机器学习通常被用于预测某种资产未来的价格走势, 但是无法直接输出潜在的投资决策。
 
-### 4.1.1 股票市场
-
-
-### 4.1.2 加密货币
-
-
-
-
 ## 4.2 深度学习
 
 采用深度学习的学者更多, 尤其是LSTM的多种变体
@@ -359,10 +366,6 @@ Beim dritten Schritt wurden die 34 Artikel einer Volltextprüfung unterzogen, be
 
 强化学习也被更加广泛地应用于多种金融市场上的算法交易:
 
-### 4.3.1 股票
-### 4.3.2 期货
-### 4.3.3 加密货币
-### 4.3.4 外汇
 
 
 ## 4.4 优化算法
@@ -383,9 +386,25 @@ Beim dritten Schritt wurden die 34 Artikel einer Volltextprüfung unterzogen, be
 - *Welche Methoden und Praktiken des algorithmischen Handelns existieren in der Literatur ?*
 并说明这些方法和实践的重要程度。
 
+(1-1)等人提出了一种基于BiLSTM的深度强化学习算法, 该方法充分利用了两个方向的时间序列数据进行信息提取。通过对比深度强化学习算法和两个基线模型, 即Buy-and-Hold(B&H)和RRL方法, (1-1)等人发现, 基于深度强化学习的算法交易策略, 例如DNN-RL, LSTM-RL, 和 BiLSTM-RL的总利润曲线明显高于两种基线模型。This advantage of LSTM-RL and BiLSTM-RL can be summarized in the following two main points. One is the ability of LSTM and BiLSTM to detect market states from raw and noisy data. The other is the online nature, which can be quickly adapted to new market states. In particular, BiLSTM-RL outperforms LSTM-RL, because BiLSTM can fully capture past and future data information simultaneously and take the reverse relationship of data into account (1-1).
+
+
+
+
 ## 5.2 AI给算法交易带来的机遇和挑战
 为了回答第二个研究问题, 我需要在第五章更进一步论述AI技术给算法交易系统带来的机遇和挑战, 可以使用第四章提到的方法和实践, 但是最好不要重复引用同一篇文献的同一个句子。
 - *"Welche Herausforderungen und Chancen bietet die Integration von AI in bestehende algorithmische Handelssysteme?*
 
+根据本研究的文献检索, 不同种类的AI技术确实给常规的算法交易带来了许多机遇。在本研究中, 机遇被解释为对常规算法交易中的买卖决策方法的扩展。也就是说, 借助不同的AI技术, 交易者们能够不再仅仅依据传统的技术指标进行交易, 而是借助AI工具提供的来自更加宽泛的维度的信息进行交易。(总结)
+- AI技术对算法交易提供的辅助, 例如借助AI技术为不同风格的投资者提供交易策略(1-6)。--> 简化了算法交易的流程, 同时细化了不同的交易策略。算法交易之所以受到交易者的追捧, 是因为计算机系统能够消除人类交易者在交易中的情绪带来的负面影响。但是消除情绪所带来的期望收益是不确定的, 因此借助AI技术让算法交易系统拥有不同的风格是积极的。
+
+
+
+但是, AI也带来了不确定性。
+可能导致误导。
+
+
+
 ## 5.3 反省和展望
 接下来的研究应该区分广义上的AI和当下以大语言模型为基础的生成式AI在算法交易领域的应用。
+
