@@ -45,13 +45,21 @@ A process diagram of the proposed automated price jump exit and re-entry strateg
 *分析检索到的文献中 , 哪些研究采用了机器学习.*: 
 
 1-3: 介绍了多种ML算法
-s11: 分类算法: 朴素贝叶斯
+~~s11: 分类算法: 朴素贝叶斯~~
+s-1-18
 
 
 
-在检索到的涉及AI和算法交易的文献中, 有些学者采用常规的机器学习的方法进行算法交易. machine learning algorithms have proven to be instrumental tools for devising trading strategies that can optimize market inefficiencies (1-3). 出于对算法交易的不同的理解, 有的研究者认为AI技术对算法交易的影响体现在, 借助机器学习算法, 金融市场上的相关指标可以被获取(s-1-1)。也有些研究者试图通过不同的交易算法预测金融市场事件，但随着市场复杂性的增加，市场预测的难度也在增加(s-1-2)。但是也有学者持相反观点, 认为仅仅使用预测性分析来预测市场的趋势或者某只股票的未来涨跌是远远不够的, 还要采用更聪明的方式从而得到更好的投资策略( )。
+在检索到的涉及AI和算法交易的文献中, 有些学者采用常规的机器学习的方法进行算法交易. machine learning algorithms have proven to be instrumental tools for devising trading strategies that can optimize market inefficiencies (1-3). 出于对算法交易的不同的理解, 有的研究者认为AI技术对算法交易的影响体现在, 借助机器学习算法, 金融市场上的相关指标可以被获取(s-1-1)。也有些研究者试图通过不同的算法来预测金融市场的趋势，但随着市场复杂性的增加，市场预测的难度也在增加(s-1-2)。但是也有学者持相反观点, 认为仅仅使用预测性分析来预测市场的趋势或者某只股票的未来涨跌是远远不够的, 还要采用更智能的方式从而得到更好的投资策略( )。
 
-(1-3)等人借助python的scikit learn library提供的Ridge Regression, Ada-Boost, Light-GBM, XG-Boost, Linear Regression, and Cat-Boost 等机器学习算法, 专门针对美国股票市场制定了算法交易策略。The objectives of algorithmic trading are to utilize advanced data analytics and computing power to pinpoint beneficial trading opportunities and trends that may be too complicated or rapid for human traders to acknowledge and act upon (1-3).
+为了实现准确的预测, 以机器学习为代表的非线性预测模型被研究和应用。这些常见的预测模型通常被分为两类, 分别是分类器(例如支持向量机, SVM)和回归器(例如 Support Vector Regression (SVR)) (s-1-18), 分别用于预测离散数据和连续数据。 (1-3)等人借助python的scikit learn library提供的Ridge Regression, Ada-Boost, Light-GBM, XG-Boost, Linear Regression, and Cat-Boost 等机器学习算法, 专门针对美国股票市场制定了算法交易策略。The objectives of algorithmic trading are to utilize advanced data analytics and computing power to pinpoint beneficial trading opportunities and trends that may be too complicated or rapid for human traders to acknowledge and act upon (1-3).
+
+### 4.1.1 分类算法用于趋势预测
+
+
+(s-1-18)等人对比了来自不同国家的10个股票市场上, Support Vector Machines (SVM), Random Forest (RF) and Naive-Bayes (NB)作为预测算法, 分别对current daily closing price directions和the next day closing price direction的预测效果进行比较。这些预测算法的独立变量是技术分析指标, 包括Simple Moving Average (SMA), Weighted Moving Average (WMA), Exponential Moving Average (EMA), Momentum, William R%, Moving Average Convergence Divergence (MACD), Relative Strength Indica- tor (RSI), Accumulation/Distribution Oscillator (ADO) and Commodity Channel Index (CCI)。这些技术指标均通过每个交易日的收盘价计算。同时, 模型的非独立变量则是收盘价的趋势, 即either upwards or downwards (s-1-18)。
+
+但是通过(s-1-18)等人的验证, 上述以多种技术指标为自变量的几个机器学习模型are virtually useless in providing useful information for trading decisions regarding next day direction。在他们的研究中, 这些分类模型在金融市场走势预测方面, 并没有展示出相较于随机模型的优势。
 
 
 
@@ -118,7 +126,7 @@ In this strategy, an agent can trade a fixed position size in a single security.
 
 
 
-### DRL-Methode
+### Hybride Methode
 1-1
 ~~hybrid method of recurrent reinforcement learning and BiLSTM for algorithmic trading~~
 deep reinforcement learning, as a combination of deep learning and reinforcement learning, stands out among many approaches in the field of decision-making because of its high performance, strong generalization, and high fitting ability.
