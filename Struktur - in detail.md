@@ -368,15 +368,7 @@ Beim dritten Schritt wurden die 34 Artikel einer Volltextprüfung unterzogen, be
 
 
 
-## 4.4 优化算法
-例如遗传算法等启发式算法在前面三种方法的基础上进行优化, 
 
-或者采用人工校正, 从而避免AI造成的过拟合问题, 进一步提升投资决策的收益率
-
-### 4.4.1 启发式算法
-启发式算法 例如遗传算法, 可以将人类专家的投资决策整合到AI的行为中。
-
-### 4.4.2 人工校正
 
 
 
@@ -397,13 +389,26 @@ Beim dritten Schritt wurden die 34 Artikel einer Volltextprüfung unterzogen, be
 
 根据本研究的文献检索, 不同种类的AI技术确实给常规的算法交易带来了许多机遇。在本研究中, 机遇被解释为对常规算法交易中的买卖决策方法的扩展。也就是说, 借助不同的AI技术, 交易者们能够不再仅仅依据传统的技术指标进行交易, 而是借助AI工具提供的来自更加宽泛的维度的信息进行交易。(总结)
 - AI技术对算法交易提供的辅助, 例如借助AI技术为不同风格的投资者提供交易策略(1-6)。--> 简化了算法交易的流程, 同时细化了不同的交易策略。算法交易之所以受到交易者的追捧, 是因为计算机系统能够消除人类交易者在交易中的情绪带来的负面影响。但是消除情绪所带来的期望收益是不确定的, 因此借助AI技术让算法交易系统拥有不同的风格是积极的。
+- 得益于机器学习模型, 交易者能够利用不同金融市场上的时间序列数据对资产价格的未来趋势进行预测。分类, 回归
+- AI技术给算法交易带来的另一个优势在于, including additional data sources of information in the state representation for an agent beyond just historical price-based data成为了可能(2-3)。例如, 融合了深度强化学习的算法交易工具可以同时将金融市场的价格数据和其他来源的文本的情感识别作为投资策略的依据, 从而帮助投资者设定回报率更高的投资策略。也就是说, 在AI技术的帮助下, 算法交易有能力emulate the decision-making process of a real-life trader who would typically conduct fundamental analysis to make trading decisions on a particular stock(2-3), 而不是仅仅执行技术分析。这个由强化学习带来的优势能够一定程度上提高交易者对算法交易的信任和接受程度。
+
+
+
 
 强化学习的特点, 决定了算法交易者们不再需要海量的标记过的数据就可以得到更好的交易策略。另一方面, 强化学习中的智能体会根据环境信息自动得出和人类交易者的认知不符的交易策略。这样的交易策略通常由于人类情绪和思维定势而被人们忽略。也就是说, AI技术的应用可能以人类无法想象的方式提升交易的期望收益。
 
 
 但是, AI也带来了不确定性。
 可能导致误导。
-In (s-1-18)等人的 approach,  a user was assumed that, he would always decide to follow the machine learning recommendation of the price direction forecast. 但是, 人类交易者应该在多大程度上信赖AI给出的投资策略是一个值得被研究的问题。
+In (s-1-18)等人的 approach,  a user was assumed that, he would always decide to follow the machine learning recommendation of the price direction forecast. 但是, 人类交易者应该在多大程度上信赖AI给出的投资策略是一个值得被研究的问题。这是因为, AI技术辅助的算法交易和人类投资者的投资策略存在潜在的差异, 导致人类投资者对于AI存在信任问题。另一个原因在于, AI通常无法预测投资者们对于金融市场趋势的情绪和态度对市场趋势的影响(2-5)。
+
+可供算法交易系统使用的AI技术在被开发和训练时, 通常对数据质量提出了很高的要求。而且, 不同的AI算法也需要不同类型的数据。基于深度学习的AI模型通常是数据驱动, 也就是说这类模型的训练需要海量的标注过的数据。对于研究者来说, 数据源的获取无疑是困难的。而在基于强化学习的算法交易系统的开发中, selecting appropriate features and data to represent the environment states can be difficult (2-7).
+
+
+此外, 基于AI技术的算法交易面临的另一个问题在于, 开发和测试通常都在同一个交易市场上进行, 甚至例如(2-3)中提到的将sentiment analysis方法仅仅被证明可用于特斯拉股票的投资. 因此, 这一类AI技术所产生的交易策略在不同金融市场上的泛化能力目前还是未知的。另外, 有些算法交易策略每次只能用于交易某一种特定的资产, 因此这类算法交易策略在面临投资组合的决策时无能为力(2-7)。考虑到深度学习模型对数据质量有很高的要求, 因此在研究包含深度学习模型的算法交易工具时, 由于数据质量导致的模型性能差异值得被重视, 例如(2-3)提到的用于情绪识别的文本来源, 包括公司财报, 新闻文章、社交媒体平台等。
+
+
+
 
 
 ## 5.3 反省和展望
