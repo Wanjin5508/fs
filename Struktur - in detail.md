@@ -268,15 +268,15 @@ Transformer 是一种基于注意力机制的模型，它抛弃了传统的RNN�
 Q-learning is a model-free off-policy RL method in which the agent aims to obtain the optimal state-action-value function by interacting with the environment. It maintains a state-action table Q[S, A] called as Q-table containing Q-values for every state-action pair (s-1-9).
 
 
-## 2.5 Markov decision process
+## ~~2.5 Markov decision process~~
 - [ ] 
 according to the definition of the Markov decision process, when the environment state is fully observable, the optimal strategy is only related to the current state, without considering historical information (1-1).
 
 
-## 2.5 启发式算法
-适用范围最广: 遗传算法
+## ~~2.5 启发式算法~~
+~~适用范围最广: 遗传算法~~
 
-用于解决优化问题。
+~~用于解决优化问题。~~
 
 ## 2.6 LLM
 并入深度学习
@@ -335,8 +335,8 @@ Beim dritten Schritt wurden die 34 Artikel einer Volltextprüfung unterzogen, be
 - Beachtung der Kombination verschiedener Autorenmeinungen.
 
 - [ ] 思考如何组织这部分的具体内容, 
-	- [ ] 1. 我想按照不同的投资领域, 例如股票, 大宗商品, 外汇, 加密货币, 投资组合等划分小标题
-	- [ ] 2. 也可以按照不同的技术路线, 例如~~统计, 算法,~~ 机器学习, 深度学习, 深度强化学习
+	- [ ] 1. ~~我想按照不同的投资领域, 例如股票, 大宗商品, 外汇, 加密货币, 投资组合等划分小标题~~
+	- [x] 2. 也可以按照不同的技术路线, 例如~~统计, 算法,~~ 机器学习, 深度学习, 深度强化学习
 
 ?? 我更倾向于采用第二种方案, 因为我的研究等题目是关于AI技术的, 所以在这一章也采用技术路线作为标题是合理的。标题结构如下:
 
@@ -379,30 +379,23 @@ Beim dritten Schritt wurden die 34 Artikel einer Volltextprüfung unterzogen, be
 并说明这些方法和实践的重要程度。
 
 (1-1)等人提出了一种基于BiLSTM的深度强化学习算法, 该方法充分利用了两个方向的时间序列数据进行信息提取。通过对比深度强化学习算法和两个基线模型, 即Buy-and-Hold(B&H)和RRL方法, (1-1)等人发现, 基于深度强化学习的算法交易策略, 例如DNN-RL, LSTM-RL, 和 BiLSTM-RL的总利润曲线明显高于两种基线模型。This advantage of LSTM-RL and BiLSTM-RL can be summarized in the following two main points. One is the ability of LSTM and BiLSTM to detect market states from raw and noisy data. The other is the online nature, which can be quickly adapted to new market states. In particular, BiLSTM-RL outperforms LSTM-RL, because BiLSTM can fully capture past and future data information simultaneously and take the reverse relationship of data into account (1-1).
-
+However, data representation still plays a crucial role in deep learning since information that can be extracted is strictly correlated to the way the information is represented (2-10, 1). 为了弥补时间序列数据无法描述市场上不同实体之间关系的不足, (2-10)等人提出了采用an ensemble network来制定投资策略的方法, 这种方法能够同时兼顾常规的时间序列数据和表达了股票之间关系的graph representation。
 
 
 
 ## 5.2 AI给算法交易带来的机遇和挑战
-为了回答第二个研究问题, 我需要在第五章更进一步论述AI技术给算法交易系统带来的机遇和挑战, 可以使用第四章提到的方法和实践, 但是最好不要重复引用同一篇文献的同一个句子。
-- *"Welche Herausforderungen und Chancen bietet die Integration von AI in bestehende algorithmische Handelssysteme?*
 
-根据本研究的文献检索, 不同种类的AI技术确实给常规的算法交易带来了许多机遇。在本研究中, 机遇被解释为对常规算法交易中的买卖决策方法的扩展。也就是说, 借助不同的AI技术, 交易者们能够不再仅仅依据传统的技术指标进行交易, 而是借助AI工具提供的来自更加宽泛的维度的信息进行交易。(总结)
-- AI技术对算法交易提供的辅助, 例如借助AI技术为不同风格的投资者提供交易策略(1-6)。--> 简化了算法交易的流程, 同时细化了不同的交易策略。算法交易之所以受到交易者的追捧, 是因为计算机系统能够消除人类交易者在交易中的情绪带来的负面影响。但是消除情绪所带来的期望收益是不确定的, 因此借助AI技术让算法交易系统拥有不同的风格是积极的。
-- 得益于机器学习模型, 交易者能够利用不同金融市场上的时间序列数据对资产价格的未来趋势进行预测。分类, 回归
-- AI技术给算法交易带来的另一个优势在于, including additional data sources of information in the state representation for an agent beyond just historical price-based data成为了可能(2-3)。例如, 融合了深度强化学习的算法交易工具可以同时将金融市场的价格数据和其他来源的文本的情感识别作为投资策略的依据, 从而帮助投资者设定回报率更高的投资策略。也就是说, 在AI技术的帮助下, 算法交易有能力emulate the decision-making process of a real-life trader who would typically conduct fundamental analysis to make trading decisions on a particular stock(2-3), 而不是仅仅执行技术分析。这个由强化学习带来的优势能够一定程度上提高交易者对算法交易的信任和接受程度。
 
+根据本研究的文献检索, 不同种类的AI技术确实给常规的算法交易带来了许多机遇。在本研究中, 机遇被解释为对常规算法交易中的买卖决策方法的扩展。也就是说, 借助不同的AI技术, 交易者们能够不再仅仅依据传统的技术指标进行交易, 而是借助AI工具提供的来自更加宽泛的维度的信息进行交易。得益于机器学习模型, 交易者能够利用不同金融市场上的时间序列数据对资产价格的未来趋势进行预测。例如交易者可以借助AI技术, 对金融市场上的时间序列数据进行分类和回归分析, 从而获得未来可能的市场波动趋势。
+AI技术给算法交易带来的另一个优势在于, including additional data sources of information in the state representation for an agent beyond just historical price-based data成为了可能(2-3)。例如, 融合了深度强化学习的算法交易工具可以同时将金融市场的价格数据和其他来源的文本的情感识别作为投资策略的依据, 从而帮助投资者设定回报率更高的投资策略。也就是说, 在AI技术的帮助下, 算法交易有能力emulate the decision-making process of a real-life trader who would typically conduct fundamental analysis to make trading decisions on a particular stock(2-3), 而不是仅仅执行技术分析。这个由强化学习带来的优势能够一定程度上提高交易者对算法交易的信任和接受程度。
+可供算法交易系统使用的AI技术在被开发和训练时, 通常对数据质量提出了很高的要求。而且, 不同的AI算法也需要不同类型的数据。基于深度学习的AI模型通常是数据驱动, 也就是说这类模型的训练需要海量的标注过的数据。对于研究者来说, 数据源的获取无疑是困难的。而在基于强化学习的算法交易系统的开发中, selecting appropriate features and data to represent the environment states can be difficult (2-7). 考虑到强化学习的特点, 算法交易者们不再需要海量的标记过的数据就可以得到更好的交易策略。另一方面, 强化学习中的智能体会根据环境信息自动得出和人类交易者的认知不符的交易策略。这样的交易策略通常由于人类情绪和思维定势而被人们忽略。也就是说, AI技术的应用可能以人类无法想象的方式提升交易的期望收益。
+AI技术对算法交易提供的辅助也体现在, 不同风格的投资者借助AI技术提供的交易策略简化工作流程(1-6)。AI技术的应用简化了算法交易的流程, 同时细化了不同的交易策略。算法交易之所以受到交易者的追捧, 是因为计算机系统能够消除人类交易者在交易中的情绪带来的负面影响。但是消除情绪所带来的期望收益是不确定的, 因此借助AI技术让算法交易系统拥有不同于人类交易者的风格所带来的好处是可观的。
 
 
 
-强化学习的特点, 决定了算法交易者们不再需要海量的标记过的数据就可以得到更好的交易策略。另一方面, 强化学习中的智能体会根据环境信息自动得出和人类交易者的认知不符的交易策略。这样的交易策略通常由于人类情绪和思维定势而被人们忽略。也就是说, AI技术的应用可能以人类无法想象的方式提升交易的期望收益。
+In (s-1-18)等人的 approach,  a user was assumed that, he would always decide to follow the machine learning recommendation of the price direction forecast. 但是, 人类交易者应该在多大程度上信赖AI给出的投资策略是一个值得被研究的问题。Although machine learning approaches have been widely used in the field of finance, to very successful degrees, these approaches remain bespoke to specific investigations and opaque in terms of explainability, comparability, and reproducibility(s-1-3). 除此之外, AI技术辅助的算法交易和人类投资者的投资策略存在潜在的差异, 导致人类投资者对于AI存在信任问题。另一个原因在于, AI通常无法预测投资者们对于金融市场趋势的情绪和态度对市场趋势的影响(2-5)。
 
 
-但是, AI也带来了不确定性。
-可能导致误导。
-In (s-1-18)等人的 approach,  a user was assumed that, he would always decide to follow the machine learning recommendation of the price direction forecast. 但是, 人类交易者应该在多大程度上信赖AI给出的投资策略是一个值得被研究的问题。这是因为, AI技术辅助的算法交易和人类投资者的投资策略存在潜在的差异, 导致人类投资者对于AI存在信任问题。另一个原因在于, AI通常无法预测投资者们对于金融市场趋势的情绪和态度对市场趋势的影响(2-5)。
-
-可供算法交易系统使用的AI技术在被开发和训练时, 通常对数据质量提出了很高的要求。而且, 不同的AI算法也需要不同类型的数据。基于深度学习的AI模型通常是数据驱动, 也就是说这类模型的训练需要海量的标注过的数据。对于研究者来说, 数据源的获取无疑是困难的。而在基于强化学习的算法交易系统的开发中, selecting appropriate features and data to represent the environment states can be difficult (2-7).
 
 
 此外, 基于AI技术的算法交易面临的另一个问题在于, 开发和测试通常都在同一个交易市场上进行, 甚至例如(2-3)中提到的将sentiment analysis方法仅仅被证明可用于特斯拉股票的投资. 因此, 这一类AI技术所产生的交易策略在不同金融市场上的泛化能力目前还是未知的。另外, 有些算法交易策略每次只能用于交易某一种特定的资产, 因此这类算法交易策略在面临投资组合的决策时无能为力(2-7)。考虑到深度学习模型对数据质量有很高的要求, 因此在研究包含深度学习模型的算法交易工具时, 由于数据质量导致的模型性能差异值得被重视, 例如(2-3)提到的用于情绪识别的文本来源, 包括公司财报, 新闻文章、社交媒体平台等。
@@ -412,8 +405,16 @@ In (s-1-18)等人的 approach,  a user was assumed that, he would always decide 
 
 
 ## 5.3 反省和展望
-接下来的研究应该区分广义上的AI和当下以大语言模型为基础的生成式AI在算法交易领域的应用。
+本研究作为一个系统性文献综述, 旨在为所有对AI在金融领域的应用感兴趣的读者提供一个尽可能详细的入门手册。无论是有相关金融市场投资经验的读者, 还是掌握一定的机器学习编程技能的其他学术背景的研究者, 都是本研究所面向的对象。通过在第一部分被提出的两个研究问题, 以及第四部分的文献分析结果, 读者能够清楚了解到目前AI技术在算法交易领域的应用现状和AI给这个领域带来的机遇和挑战。
 
-如果所有人都采用AI辅助算法交易, 对市场的影响? AI是否也会成为交易者的预期? AI辅助的算法交易者在市场的占比是否也会成为未来技术分析的一个指标。
+但是, 本研究只分析了学术界对于AI在算法交易的看法, 无法顾及到在真实的投资实践中所应用的技术。在真实的投资实践中, 金融市场不仅仅会受到各种突发事件的影响, 从而导致AI无法作出及时的反应, 也会受到市场上其他投资者行为的影响。未来的研究可以在本研究的基础上, 考虑这样一种情况: 如果所有人都采用AI辅助算法交易, 对市场的影响? AI是否也会成为交易者的预期? AI辅助的算法交易者在市场的占比是否也会成为未来技术分析的一个指标?
 
-将人类的专业知识与AI技术给出的建议相结合，可能会产生有利可图的投资策略，但前提是要正确计算信任度(s-1-18)。
+随着AI技术和硬件算力的不断发展, AI技术在金融领域的应用正在成为学术界和工业界的一个热门话题。为了准确评估这些新技术的真实表现, 统计学技术(statistical technique)应当被应用于弥补AI技术在可解释性和可比较性方面的不足(s-1-3, 2)。因为在未来的研究中, 研究的重点应该不仅仅局限在AI技术的更新, 也要探讨这些技术为什么能取得好的成果。尤其是在以大语言模型为基础的生成式AI大行其道的当下, 让尽可能多的人了解AI技术的原理以及AI如何帮助人类更好地完成工作是值得深入讨论的问题。因此, 接下来的研究应该区分广义上的AI和当下以大语言模型为基础的生成式AI在算法交易领域的应用。目前这方面的研究成果极少, 在将来的实践和研究中, 以大语言模型为基础的生成式AI在金融领域的应用应该被深入探讨。
+
+尽管前面提到的多种AI工具能够在理论上帮助人类交易者获取更多利润, 但是现阶段AI无法完全替代人类交易者完成交易, 而是扮演一个辅助角色。 考虑到本研究的范围限制在AI技术对算法交易的影响, 一些研究者提出的在AI提供的投资决策的基础上进行优化的可能性没有被包含在本研究内。关于这个优化过程, 不同领域的专家提供了不同的方案。例如, 将人类的专业知识与AI技术相结合，可能会产生有利可图的投资策略，但前提是要正确计算信任度(s-1-18)。也有的研究者提出采用启发式算法对AI提供的投资策略进行优化, 例如, (s-1-17)等人采用遗传算法优化了股票交易中的filter rule parameters, 从而对股票投资组合的收益进行了提升。
+
+总之, AI
+
+
+
+
