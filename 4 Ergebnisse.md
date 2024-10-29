@@ -26,7 +26,7 @@ s-1-2
 (s-1-2)等人提出了一个novel automated exit and re-entry strategy with the primary aim of anticipating price jumps in a timely manner and then analysing market volatility until a suitable point of market re-entry has been identified. Intraday traders utilise small trades and intraday price fluctuations to accumulate portfolio returns without keeping a position open overnight. Since high market liquidity is a requirement for intraday trading, the Foreign exchange (Forex) market is often the asset of choice (s-1-2).
 
 s-1-2
-VaR analyses are a form of risk management in which it is assumed that the assets’ values depend purely on their prices and are not influenced by the relevant trade volumes or trade types (buys or sells) (Gourieroux & Jasiak, 2010). 借助VaR分析, 投资组合在接下来M个交易日中的最大期望损失能够被计算。本策略涉及的另一个方法是Entropy, entropy is an indication of system disorder or chaos。In the context of finance theory, entropy is often associated with probability theory and is a measure of system uncertainty. Broadly speaking, entropy is applied to portfolio selection (a subfield of risk management) and asset selection
+VaR analyses are a form of risk management in which it is assumed that the assets’ values depend purely on their prices and are not influenced by the relevant trade volumes or trade types (buys or sells) ***(Gourieroux & Jasiak, 2010)***. 借助VaR分析, 投资组合在接下来M个交易日中的最大期望损失能够被计算。本策略涉及的另一个方法是Entropy, entropy is an indication of system disorder or chaos。In the context of finance theory, entropy is often associated with probability theory and is a measure of system uncertainty. Broadly speaking, entropy is applied to portfolio selection (a subfield of risk management) and asset selection
 
 the automated exit and re-entry strategy comprises two underlying phases. During Phase 1, a VaR analysis is performed to identify price jumps. Thereafter, Phase 2 involves carrying out an entropy analysis to identify an appropriate point for market re-entry (s-1-2). 在两个案例研究中, (s-1-2)等人通过验证得到了积极的结果, 并给金融市场上的价格波动带来的潜在损失赋予了一个货币价值。
 
@@ -37,7 +37,7 @@ A process diagram of the proposed automated price jump exit and re-entry strateg
 
 ## 4.1 机器学习
 
-在检索到的涉及AI和算法交易的文献中, 有些学者采用常规的机器学习的方法进行算法交易. machine learning algorithms have proven to be instrumental tools for devising trading strategies that can optimize market inefficiencies (1-3). 出于对算法交易的不同的理解, 有的研究者认为AI技术对算法交易的影响体现在, 借助机器学习算法, 金融市场上的相关指标可以被获取(s-1-1)。也有些研究者试图通过不同的算法来预测金融市场的趋势，但随着市场复杂性的增加，市场预测的难度也在增加(s-1-2)。但是也有学者持相反观点, 认为仅仅使用预测性分析来预测市场的趋势或者某只股票的未来涨跌是远远不够的, 还要采用更智能的方式从而得到更好的投资策略( )。
+在检索到的涉及AI和算法交易的文献中, 有些学者采用常规的机器学习的方法进行算法交易. machine learning algorithms have proven to be instrumental tools for devising trading strategies that can optimize market inefficiencies (1-3). 出于对算法交易的不同的理解, 有的研究者认为AI技术对算法交易的影响体现在, 借助机器学习算法, 金融市场上的相关指标可以被获取(s-1-1)。也有些研究者试图通过不同的算法来预测金融市场的趋势，但随着市场复杂性的增加，市场预测的难度也在增加(s-1-2)。但是也有学者持相反观点, 认为仅仅使用预测性分析来预测市场的趋势或者某只股票的未来涨跌是远远不够的, 还要采用更智能的方式从而得到更好的投资策略(***补充文献*** )。
 
 为了实现准确的预测, 以机器学习为代表的非线性预测模型被研究和应用。这些常见的预测模型通常被分为两类, 分别是分类器(例如支持向量机, SVM)和回归器(例如 Support Vector Regression (SVR)) (s-1-18), 分别用于预测离散数据和连续数据。 (1-3)等人借助python的scikit learn library提供的Ridge Regression, Ada-Boost, Light-GBM, XG-Boost, Linear Regression, and Cat-Boost 等机器学习算法, 专门针对美国股票市场制定了算法交易策略。The objectives of algorithmic trading are to utilize advanced data analytics and computing power to pinpoint beneficial trading opportunities and trends that may be too complicated or rapid for human traders to acknowledge and act upon (1-3).
 
@@ -101,7 +101,7 @@ deep reinforcement learning has achieved remarkable success in solving complex s
 
 
 ### 4.3.1 RRL
-深度强化学习的一个基线模型是 the recurrent reinforcement learning (RRL) algorithm with return as the input and the difference Sharpe ratio as the objective function for single assets and portfolios with a transaction cost. the RRL method only uses a simple full connection and a hidden layer network to jointly generate the trading signal through the previous trading signal and the return sequence  (1-1)
+深度强化学习的一个基线模型是 the recurrent reinforcement learning (RRL) algorithm with return as the input and the difference Sharpe ratio as the objective function for single assets and portfolios with a transaction cost ***(cite)***. the RRL method only uses a simple full connection and a hidden layer network to jointly generate the trading signal through the previous trading signal and the return sequence  (1-1)
 但是这一个基线模型extracts features from time series data in a linear manner, but financial markets are noisy, and a nonlinear model is needed to extract higher-level features. In contrast, deep learning combines features through multilayer network structures and nonlinear transformations with strong perception and representation capabilities (1-1). 因此这个基线模型在文献研究的结果中被用作对照组, 从而检验不同研究者提出的新的更复杂的模型的性能。
 
 - [x] 

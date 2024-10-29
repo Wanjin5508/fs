@@ -378,9 +378,17 @@ Beim dritten Schritt wurden die 34 Artikel einer Volltextprüfung unterzogen, be
 - *Welche Methoden und Praktiken des algorithmischen Handelns existieren in der Literatur ?*
 并说明这些方法和实践的重要程度。
 
-(1-1)等人提出了一种基于BiLSTM的深度强化学习算法, 该方法充分利用了两个方向的时间序列数据进行信息提取。通过对比深度强化学习算法和两个基线模型, 即Buy-and-Hold(B&H)和RRL方法, (1-1)等人发现, 基于深度强化学习的算法交易策略, 例如DNN-RL, LSTM-RL, 和 BiLSTM-RL的总利润曲线明显高于两种基线模型。This advantage of LSTM-RL and BiLSTM-RL can be summarized in the following two main points. One is the ability of LSTM and BiLSTM to detect market states from raw and noisy data. The other is the online nature, which can be quickly adapted to new market states. In particular, BiLSTM-RL outperforms LSTM-RL, because BiLSTM can fully capture past and future data information simultaneously and take the reverse relationship of data into account (1-1).
-However, data representation still plays a crucial role in deep learning since information that can be extracted is strictly correlated to the way the information is represented (2-10, 1). 为了弥补时间序列数据无法描述市场上不同实体之间关系的不足, (2-10)等人提出了采用an ensemble network来制定投资策略的方法, 这种方法能够同时兼顾常规的时间序列数据和表达了股票之间关系的graph representation。
+为了进一步提升算法交易系统在实践中的获利能力, 近些年以来许多学者不断将AI技术融入到算法交易系统中。这些AI技术涉及当前AI发展的几乎所以技术类别, 不但包含了算法为导向的机器学习方法, 也涵盖了数据驱动的深度学习方法。这里提到的机器学习和深度学习可以被归类为, 研究者们出于对未来趋势的预测而决定采用的AI技术。这类预测性AI技术的应用也符合个人交易者在不同金融市场基于自己对市场未来走势的预期买卖金融资产并试图获利的行为. 但是需要特别提到的是, 这类预测性方法的意图并不是预测某个金融资产在下一个交易日的真实价格。事实上正如前面提到的有效市场假说, 金融资产的价格是无法被预测的。预测的目的在于通过不同的方法, 对未来的可能趋势进行预测。
 
+在传统机器学习领域, 研究者们使用分类算法和回归算法对未来趋势进行分析。交易者们根据分析的结果, 采用方向性交易的方式从中获利。但是(s-1-18)等人通过实验得出, 基于机器学习分类算法的方法无法在预测金融市场趋势方面取得相较于随机模型的优势。由于研究者们对于无法通过回归算法预测未来的资产价格的共识, (2-1)等人采用了随机森林算法和支持向量机算法预测了比特币期货市场上的价格波动性, 并取得了相较于基于计量经济学方法的更好的结果。鉴于supervised learning对被标记的数据提出的高要求, (s-1-9)等人创新性地采用了无监督学习 的方法, k均值, 并试图从historical trading sessions数据中根据它们的共同特征, 将导致获利的session单独分离出来。在历史可重复的假设下, 投资者们理论上可以通过模仿过去的成功的交易行为, 从而获取利润。
+
+有别于机器学习方法, 深度学习方法则更加强调数据的重要性。研究者人期望通过多层神经网络模型从来自金融市场的多种数据中提取出不易被人们察觉到的信息。通常来说, 结构复杂的神经网络, 例如LSTM, 从数据中提取信息的能力比结构简单的网络, 例如MLP, 更强大。金融市场上产生的一类很常见的数据是时间序列数据, 例如股票市场上某一支股票从上市以来直到现在的价格随时间变化的数据。然而, 这样的时间序列数据实际上反映了受到大量变量影响的价格决定过程。也就是说, 金融市场上的时间序列数据所暗含的信息量是非常巨大的。为了实现从这类时间序列数据中高效提取关键信息, (1-1)等人提出了一种借助BiLSTM进行高效信息提取的方法, 该方法充分利用了两个方向的时间序列数据进行信息提取。通过对比深度强化学习算法和两个基线模型, 即Buy-and-Hold(B&H)和RRL方法, (1-1)等人发现, 基于深度强化学习的算法交易策略, 例如DNN-RL, LSTM-RL, 和 BiLSTM-RL的总利润曲线明显高于两种基线模型。
+
+This advantage of LSTM-RL and BiLSTM-RL can be summarized in the following two main points. One is the ability of LSTM and BiLSTM to detect market states from raw and noisy data. The other is the online nature, which can be quickly adapted to new market states. In particular, BiLSTM-RL outperforms LSTM-RL, because BiLSTM can fully capture past and future data information simultaneously and take the reverse relationship of data into account (1-1).
+
+但是, 也有的学者对于时间序列数据所能体现的信息量提出了质疑。这是因为, data representation  plays a crucial role in deep learning since information that can be extracted is strictly correlated to the way the information is represented (2-10, 1). 为了弥补时间序列数据无法描述市场上不同实体之间关系的不足, (2-10)等人提出了采用融合了CNN的组合神经网络来制定投资策略的方法. 这种方法之所以能够同时兼顾常规的时间序列数据和表达了股票之间关系的graph representation, 是因为CNN在从二维数据中提取信息的能力非常强大(2-10)。
+
+为了避免深度学习方法的过拟合问题, 同时实现连续且快速的决策制定, 研究者们将目光聚焦于强化学习和深度强化学习。强化学习的基本思想是, 智能体在连续与环境进行交互的过程中, 学到最佳的动态交易策略, 同时尽可能降低风险。大多数研究者们考虑对智能体所处的环境进行适当的调整, 从而让智能体有可能更高效地通过与环境的交互生成投资策略。例如(2-7)等人提出的DCRL方法实际上是一种基于方向变化的环境表示, 为了实现这个表示, Q- Learning- Algorithm被用于训练。这样的市场方向表示与前面在机器学习部分提到的采用分类算法对市场趋势进行预测的方法不谋而合, 但是根据(2-7)等人的研究结果, Q- Learning- Algorithm确实能够提升算法交易的性能。引入方向性变化目的是, 取代常规的基于固定时间间隔的时间序列分析方法作为状态的表示。 出于同样的目的, (2-3)等人则通过sentiment analysis对智能体所处的环境进行增强, 从而弥补价格时间序列数据在信息含量上的不足。
 
 
 ## 5.2 AI给算法交易带来的机遇和挑战
@@ -400,6 +408,8 @@ In (s-1-18)等人的 approach,  a user was assumed that, he would always decide 
 
 此外, 基于AI技术的算法交易面临的另一个问题在于, 开发和测试通常都在同一个交易市场上进行, 甚至例如(2-3)中提到的将sentiment analysis方法仅仅被证明可用于特斯拉股票的投资. 因此, 这一类AI技术所产生的交易策略在不同金融市场上的泛化能力目前还是未知的。另外, 有些算法交易策略每次只能用于交易某一种特定的资产, 因此这类算法交易策略在面临投资组合的决策时无能为力(2-7)。考虑到深度学习模型对数据质量有很高的要求, 因此在研究包含深度学习模型的算法交易工具时, 由于数据质量导致的模型性能差异值得被重视, 例如(2-3)提到的用于情绪识别的文本来源, 包括公司财报, 新闻文章、社交媒体平台等。
 
+- [x] 
+理论与实践的结合是另一个值得关注的挑战。在检索到的文献中, 几乎所有研究者的关注的重点都被放置在不同类别的AI技术涉及的算法原理上, 也就是数学推导和建模的过程上。尽管数学模型对于设计出高性能的算法交易系统是至关重要的, 但是对数学模型重要性的强调同时也导致这些较为晦涩的研究成果很难对实践产生指导。经过对这些研究成果的分析和讨论, 本研究对这些致力于通过优化数学模型实现算法交易优化的成果保持积极态度。但是一个不得不忽视的挑战在于, 这些AI模型应该如何被融入到真实的算法交易实践中去。换句话说, 现有的算法交易系统的架构应该如何在原有的高频交易系统的基础上扩展新的AI特征是有趣且充满挑战的。
 
 
 
@@ -414,7 +424,9 @@ In (s-1-18)等人的 approach,  a user was assumed that, he would always decide 
 尽管前面提到的多种AI工具能够在理论上帮助人类交易者获取更多利润, 但是现阶段AI无法完全替代人类交易者完成交易, 而是扮演一个辅助角色。 考虑到本研究的范围限制在AI技术对算法交易的影响, 一些研究者提出的在AI提供的投资决策的基础上进行优化的可能性没有被包含在本研究内。关于这个优化过程, 不同领域的专家提供了不同的方案。例如, 将人类的专业知识与AI技术相结合，可能会产生有利可图的投资策略，但前提是要正确计算信任度(s-1-18)。也有的研究者提出采用启发式算法对AI提供的投资策略进行优化, 例如, (s-1-17)等人采用遗传算法优化了股票交易中的filter rule parameters, 从而对股票投资组合的收益进行了提升。
 
 总之, AI
-
+- [ ] AI 种类繁多, 不同的技术路线, 提供了不同的解决方案。给想进入这个领域的任何有兴趣的人提供了丰富的参考, 从而...
+- [ ] 对于自动化的算法交易系统, 引入AI以后的系统架构调整问题。
+ 
 
 
 
