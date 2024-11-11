@@ -83,6 +83,8 @@ Recently, the algorithmic trading of financial assets is rapidly developing with
 ### LSTM & BiLSTM
 为了更高效地从金融市场的时间序列数据中获取长期和短期的信息, 结构更加复杂的LSTM被引入。the BiLSTM consisting of two LSTM models with opposite directions is able to make full use of the information from both directions in attempting to capture more effective information. The LSTM/BiLSTM is used to approximate the decision function, which maps the state space to the action space, and then maximizes the Sharpe ratio by the gradient ascent method to generate the best trad- ing strategy, respectively (1-1). 如图2提到的LSTM的结构可知, 神经网络的隐藏层的状态不仅仅和当前时刻的输入有关, 也和上一个时间点的隐藏状态有关。
 
+这也正是LSTM模型及其变体能够从不同长度的时间序列数据中提取关于金融市场的长短期数据的原因。这一类基于LSTM的模型通常被研究者们用于深度强化学习模型的特征提取器, 因此这类模型的细节在本研究的Kapitel 4.4被深入阐释。
+
 
 
 
